@@ -1,5 +1,4 @@
-# Futebol Chess Game Manual
-# Futebol Chess Game Manual
+# XFutebol, a Chess-like board game Manual.
 
 ## Table of Contents
 1. [Game Overview](#1-game-overview)
@@ -49,15 +48,14 @@
     3. [Simplified Version: Specific Attribute Values](#103-simplified-version-specific-attribute-values)
 11. [Final Thoughts and Future Developments](#11-final-thoughts-and-future-developments)
 
+## **1. Game Overview**
+### **1.1 Objective**
+*Players compete to score goals by strategically moving pieces on a chessboard-like soccer field. The game combines elements of chess and soccer, requiring tactical thinking and careful planning.*
 
-## 1. Game Overview
-### 1.1 Objective
-Players compete to score goals by strategically moving pieces on a chessboard-like soccer field. The game combines elements of chess and soccer, requiring tactical thinking and careful planning.
+### **1.2 Game Components**
+*The game consists of two chess boards aligned to create a 16x8 grid, pieces representing different player types, and markers for tracking fouls and cards.*
 
-### 1.2 Game Components
-The game consists of two chess boards aligned to create a 16x8 grid, pieces representing different player types, and markers for tracking fouls and cards.
-
-### 1.3 Player Types
+### **1.3 Player Types**
 - **Attackers (Forwards):** Fast, goal-oriented players.
 - **Defenders:** Strong, defense-focused players.
 - **Midfielders:** Versatile players adept in both offense and defense.
@@ -66,18 +64,21 @@ The game consists of two chess boards aligned to create a 16x8 grid, pieces repr
 - **Goalers:** Focused on scoring and long-range shots.
 - **Long Experts:** Specialized in executing uninterceptible long passes and shots.
 
-## 2. Game Setup
-### 2.1 Board Configuration
-Align two chess boards to form a 16x8 grid, representing an extended soccer field.
 
-### 2.2 Team Composition
-Each team consists of 11 players. At the beginning of the game, players select two special pieces from each of the following categories: Dribblers, Goalers, and Long Experts. The remaining five players include the Goal Keeper, along with a combination of Attackers, Defenders, and Midfielders.
 
-### 2.3 Starting the Game
-The game starts with a coin toss to decide the starting team.
 
-### 2.4 Defining the Winning Style
-Before beginning the game, players must agree on the winning style. They can choose between the following options:
+## **2. Game Setup**
+### **2.1 Board Configuration**
+*Align two chess boards to form a 16x8 grid, representing an extended soccer field.*
+
+### **2.2 Team Composition**
+*Each team consists of 11 players. At the beginning of the game, players select two special pieces from each of the following categories: Dribblers, Goalers, and Long Experts. The remaining five players include the Goal Keeper, along with a combination of Attackers, Defenders, and Midfielders.*
+
+### **2.3 Starting the Game**
+*The game starts with a coin toss to decide the starting team.*
+
+### **2.4 Defining the Winning Style**
+*Before beginning the game, players must agree on the winning style.* They can choose between the following options:
 - **Golden Goal:** The game ends immediately when the first goal is scored.
 - **Two Halves with Total Score:** The winner is determined by the highest total score at the end of both halves, with a penalty shootout as a tiebreaker in case of a draw.
 - **Number of Goals:** The game continues until a team reaches a predetermined number of goals.
@@ -88,7 +89,8 @@ Selecting the winning style is crucial as it sets the tone and strategy for the 
 
 ## 3. Player Movement and Actions
 ### 3.1 Move Action
-Players move their pieces according to the type's movement ability. 
+
+*Players move their pieces according to the type's movement ability.* 
 - **Attackers:** Move 2 squares forward, 1 backward, 1 to the sides.
 - **Defenders:** Move 1 square in any direction.
 - **Midfielders:** Move 2 squares to the sides, 1 forward, 1 backward.
