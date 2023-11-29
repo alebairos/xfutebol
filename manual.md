@@ -8,8 +8,9 @@
 2. [Game Setup](#2-game-setup)
    1. [Board Configuration](#21-board-configuration)
    2. [Team Composition](#22-team-composition)
-   3. [Starting the Game](#23-starting-the-game)
-   4. [Defining the Winning Style](#24-defining-the-winning-style)
+   3. [Goal Area](#23-goal-area)
+   4. [Penalty Area](#24-penalty-area)
+   5. [Starting the Game](#25-starting-the-game)
 3. [Player Movement and Actions](#3-player-movement-and-actions)
    1. [Move Action](#31-move-action)
    2. [Pass Action](#32-pass-action)
@@ -74,8 +75,21 @@
 ### **2.2 Team Composition**
 *Each team consists of 11 players. At the beginning of the game, players select two special pieces from each of the following categories: Dribblers, Goalers, and Long Experts. The remaining five players include the Goal Keeper, along with a combination of Attackers, Defenders, and Midfielders.*
 
-### **2.3 Starting the Game**
-*The game starts with a coin toss to decide the starting team.*
+### 2.3 Goal Area
+- **Definition:** The Goal Area is a crucial zone on the game board, located at each end of the board, surrounding the goal.
+- **Location:** For a 16x8 board, the Goal Area is defined as the squares C1-F1 and C8-F8.
+- **Significance:** The Goal Keeper usually occupies this area. If the Goal Keeper is outside of the Goal Area, the goal is considered empty, increasing the chance of scoring.
+- **Player Awareness:** Players should be acutely aware of the Goal Area on their own board, as it greatly influences defensive and offensive strategies.
+
+### 2.4 Penalty Area
+- **Definition:** The Penalty Area is a larger zone that includes the Goal Area and additional squares directly in front of the goal.
+- **Location:** The Penalty Area extends to squares B1-G1, B2-G2 for one end and B7-G7, B8-G8 for the other end of the board.
+- **Importance:** Fouls committed by the defending team in the Penalty Area result in a penalty kick for the attacking team.
+- **Player Awareness:** Understanding the boundaries and strategic significance of the Penalty Area is essential for effective gameplay.
+
+### **2.5 Starting the Game**
+*The game starts with a coin toss to decide the starting team. Players should keep in mind the strategic importance of the Goal and Penalty Areas as they begin their play.*
+
 
 ### **2.4 Defining the Winning Style**
 *Before beginning the game, players must agree on the winning style.* They can choose between the following options:
@@ -94,7 +108,7 @@ Selecting the winning style is crucial as it sets the tone and strategy for the 
 - **Attackers:** Move 2 squares forward, 1 backward, 1 to the sides.
 - **Defenders:** Move 1 square in any direction.
 - **Midfielders:** Move 2 squares to the sides, 1 forward, 1 backward.
-- **Goal Keeper:** Move 1 square in any direction; moving out of the small area risks leaving the goal unguarded.
+- **Goal Keeper:** Move 1 square in any direction; moving out of the goal area risks leaving the goal unguarded.
 - **Dribbler:** Move 2 squares forward, 1 backward, 1 to the sides, with enhanced dribbling capability.
 - **Goaler:** Move 2 squares forward, 1 backward, 1 to the sides, focused on advancing towards the opponent's goal.
 - **Long Experts:** Their MOVE action follows the movement pattern of their original position as defenders, attackers, or midfielders. This categorization determines their standard movement range.
@@ -151,7 +165,7 @@ Specialized in executing uninterceptible long-range passes and shots. Their role
 Goals are scored by successfully executing a Shoot action against the opponent's goal.
 
 ### 5.2 Goalkeeper's Role
-Key in defending the goal. Can move out of the small area but risks leaving the goal unguarded.
+Key in defending the goal. Can move out of the goal area but risks leaving the goal unguarded.
 
 ## 6. Fouls and Penalties
 ### 6.1 Defining a Foul
@@ -178,7 +192,7 @@ Occurs when a player's MOVE targets an opponent's square, or an unsuccessful CHA
 
 ## 7. Special Game Scenarios
 ### 7.1 Empty Goal Scenario
-If the goalkeeper is not in the small area and a goal is attempted, it's likely to succeed.
+If the goalkeeper is not in the goal area and a goal is attempted, it's likely to succeed.
 
 ### 7.2 Barrier Formation and Challenges
 Defenders can form a barrier and challenge LONG actions after a free kick.
