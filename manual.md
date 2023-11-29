@@ -199,32 +199,25 @@ Defenders can form a barrier and challenge LONG actions after a free kick.
 
 ## 8. Game Dynamics and Balance
 ### 8.1 Team Limits on SPRINT and LONG Actions
-Restrictions to prevent overuse and maintain strategic depth.
-
-### 8.2 Energy and Stamina System
-Affects player performance and limits the frequency of certain actions.
+Restrictions to prevent overuse and maintain strategic depth. Maximum of 3 Sprints per half. For the time being, no restrictions for LONG actions.
 
 ## 9. Winning the Game
 ### 9.1 Golden Goal
-First goal wins the game.
+First goal wins the game. The length is 15 minutes, with a penalty shootout as a tiebreaker.
 
 ### 9.2 Two Halves with Total Score
-The highest score after two halves wins, with a penalty shootout as a tiebreaker.
+The highest score after two halves wins, with a penalty shootout as a tiebreaker. The length of each half is 15 min each.
 
 ### 9.3 Number of Goals
 The first team to reach a predetermined number of goals wins.
 
 ### 9.4 Movement Count Rule
-If no goals are scored within a set number of movements, the winner is decided by a penalty shootout.
+If no goals are scored within a set number of movements, 50 by default, the winner is decided by a penalty shootout.
 
 ## 10. Miscellaneous Rules
-### 10.1 Substitutions
-Rules for changing player types during the game (if applicable).
+The following table defines the feature values of each of the Player Piece types.
 
-### 10.2 Half-Time and Game Duration
-The length of each half and total game time.
-
-### 10.3 Simplified Version: Specific Attribute Values for Player Types
+### 10.1 Simplified Version: Specific Attribute Values for Player Types
 | Player Type   | Speed | Skill | Strength | Goal | Defense |
 |---------------|-------|-------|----------|------|---------|
 | Attackers     | 80    | 50    | 40       | 85   | 30      |
