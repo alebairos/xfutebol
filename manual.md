@@ -45,6 +45,7 @@
 10. [Miscellaneous Rules](#10-miscellaneous-rules)
     1. [Substitutions](#101-substitutions)
     2. [Half-Time and Game Duration](#102-half-time-and-game-duration)
+    3. [Simplified Version: Specific Attribute Values](#103-simplified-version-specific-attribute-values)
 
 ## 1. Game Overview
 ### 1.1 Objective
