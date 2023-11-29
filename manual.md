@@ -14,16 +14,25 @@ The game consists of two chess boards aligned to create a 16x8 grid, pieces repr
 - **Goal Keepers:** Specialized in defending the goal, with the option to join attacks.
 - **Dribblers:** Skilled in evading opponents and maintaining ball control.
 - **Goalers:** Focused on scoring and long-range shots.
+- **Long Experts:** Specialized in executing uninterceptible long passes and shots.
 
 ## 2. Game Setup
 ### 2.1 Board Configuration
 Align two chess boards to form a 16x8 grid, representing an extended soccer field.
 
 ### 2.2 Team Composition
-Each team has 11 pieces. Players choose one Goaler, one Dribbler, and arrange the rest as Attackers, Defenders, Midfielders, and a Goal Keeper.
+Each team consists of 11 players. At the beginning of the game, players select two special pieces from each of the following categories: Dribblers, Goalers, and Long Experts. The remaining five players include the Goal Keeper, along with a combination of Attackers, Defenders, and Midfielders. This selection forms the basis of the team's strategy, influencing their approach to both offense and defense throughout the game.
+
+- **Special Pieces Selection:**
+  - Choose 2 Dribblers: Skilled in evading opponents and maintaining ball control.
+  - Choose 2 Goalers: Focused on scoring, especially effective in shoot actions.
+  - Choose 2 Long Experts: Specialized in executing uninterceptible long-range passes and shots, with the ability to perform both straight and curved actions.
+- **Regular Players:**
+  - The remaining players, including the Goal Keeper, are chosen to balance the team composition, focusing on defense, midfield control, and attack strategies.
 
 ### 2.3 Starting the Game
 The game starts with a coin toss to decide the starting team.
+
 
 ## 3. Player Movement and Actions
 ### 3.1 Move Action
@@ -34,17 +43,18 @@ Players move their pieces according to the type's movement ability.
 - **Goal Keeper:** Move 1 square in any direction; moving out of the small area risks leaving the goal unguarded.
 - **Dribbler:** Move 2 squares forward, 1 backward, 1 to the sides, with enhanced dribbling capability.
 - **Goaler:** Move 2 squares forward, 1 backward, 1 to the sides, focused on advancing towards the opponent's goal.
+- **Long Experts:** Their MOVE action follows the movement pattern of their original position as defenders, attackers, or midfielders. This categorization determines their standard movement range.
 
 ### 3.2 Pass Action
 - **Mechanism:** Transfer the ball to a teammate within line of sight following the square distance rules for the movements of each piece.
 - **Distance:** A simple pass extends up to 2 times the standard movement range of the piece. For example, an attacker can pass the ball up to 4 squares forward.
 - **Outcome:** Successful pass if the ball reaches a teammate; otherwise, potential interception by an opponent.
 
-### 3.3 Long Pass Action
-- **Mechanism:** Send the ball to a distant teammate, available to all player types.
-- **Distance:** A long pass extends up to 3 times the standard movement range of the piece. For example, an attacker can execute a long pass up to 6 squares forward.
-- **Outcome:** Successful long pass if the ball reaches a teammate; risk of interception increases with distance.
-
+### 3.3 Long Pass Action (Exclusive to Long Experts)
+- **Mechanism:** Long Experts can send the ball to a distant teammate. They have the unique ability to perform both straight and curved long passes.
+  - **Curved Pass:** Requires selecting an intermediary square where the curve starts and a final target square. Allows bypassing obstacles and reaching targets not in direct line of sight.
+- **Distance:** A long pass extends up to 3 times the standard movement range of the piece.
+- **Outcome:** Successful long pass if the ball reaches a teammate; risk of interception or misdirection increases with distance and complexity of the trajectory.
 
 ### 3.4 Challenge Action
 Attempt to take the ball from an opponent, successful based on Strength and Defense.
@@ -64,10 +74,10 @@ Evade an opponent in an adjacent square, using Speed and Skill.
   - If Goal > Defense: Goal is scored.
   - If Defense ≥ Goal: Goalkeeper saves or deflects the shot.
 
-
-### 3.8 Long Shoot Action
-- **Mechanism:** Shooter's Goal and Strength vs. goalkeeper's Defense and Skill.
-- **Distance:** The Long Shoot action extends up to 3 times the standard movement range of the piece, aiming at the goal.
+### 3.8 Long Shoot Action (Exclusive to Long Experts)
+- **Mechanism:** Long Experts can perform a Long Shoot action, using their Goal and Strength. This action includes both straight and curved shots.
+  - **Curved Shoot:** Involves choosing an intermediary square for the curve and the final goal square. Enhances the ability to score from angles not directly aligned with the goal.
+- **Distance:** The Long Shoot action extends up to 3 times the standard movement range of the piece.
 - **Outcome:**
   - If Goal + Strength > Defense + Skill: Goal is scored.
   - If Defense + Skill ≥ Goal + Strength: Goalkeeper saves or deflects the shot.
@@ -78,6 +88,9 @@ Enhanced shooting abilities, beneficial for scoring.
 
 ### 4.2 Dribbler
 Superior in evading opponents, ideal for advancing the ball.
+
+### 4.3 Long Experts
+Specialized in executing uninterceptible long-range passes and shots. Their role is crucial for strategic positioning and creating unexpected scoring opportunities.
 
 ## 5. Scoring and Goalkeeping
 ### 5.1 Scoring Mechanism
@@ -98,6 +111,7 @@ Accumulating 3 fouls results in a yellow card, 4 or more in a red card and the r
 - **Outcome:**
   - If Skill + Goal > Defense: Successful kick.
   - If Defense ≥ Skill + Goal: Defenders block or deflect the kick.
+
 
 ### 6.4 Penalty Kick Rules
 - **Mechanism:** Shooter's Goal feature vs. goalkeeper's Defense.
@@ -139,3 +153,15 @@ Rules for changing player types during the game (if applicable).
 ### 10.2 Half-Time and Game Duration
 The length of each half and total game time.
 
+### 10.3 Simplified Version: Specific Attribute Values for Player Types
+| Player Type   | Speed | Skill | Strength | Goal | Defense |
+|---------------|-------|-------|----------|------|---------|
+| Attackers     | 80    | 50    | 40       | 85   | 30      |
+| Defenders     | 40    | 40    | 70       | 30   | 80      |
+| Midfielders   | 60    | 70    | 50       | 50   | 60      |
+| Goal Keeper   | 30    | 40    | 80       | 60   | 90      |
+| Dribbler      | 90    | 80    | 30       | 40   | 40      |
+| Goaler        | 50    | 50    | 60       | 90   | 50      |
+| Long Experts  | 70    | 60    | 50       | 70   | 40      |
+
+This manual provides a comprehensive guide to playing Futebol Chess, covering all aspects of the game from setup to gameplay mechanics. The inclusion of special player types like Long Experts adds strategic depth, and the specific attribute values for the simplified version make it accessible for beginners.
