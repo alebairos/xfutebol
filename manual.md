@@ -1,4 +1,4 @@
-# XFutebol, a Chess-like board game Manual.
+# XFutebol: a Chess-like board Game Manual.
 
 ## Table of Contents
 1. [Game Overview](#1-game-overview)
