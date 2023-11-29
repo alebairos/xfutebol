@@ -178,19 +178,19 @@ Key in defending the goal. Can move out of the goal area but risks leaving the g
   - Goalkeeper's Defense (De)
 
 #### 2. **Outcome Determination:**
-- **Goal Scored (Equivalent to Dice Roll 1 or 2):** 
+- **Goal Scored:** 
   - If the shooter's Goal attribute is significantly higher than the goalkeeper's Defense.
   - *Example:* `Go >= De + 20` (The shooter's Goal is at least 20 points higher than the goalkeeper's Defense)
 
-- **Save with Rebound (Equivalent to Dice Roll 3):** 
+- **Save with Rebound:** 
   - If the shooter's Goal attribute is slightly higher or nearly equal to the goalkeeper's Defense.
   - *Example:* `De <= Go < De + 20` (The shooter's Goal is greater than or equal to the goalkeeper's Defense but less than 20 points higher)
 
-- **Goalkeeper Clears (Equivalent to Dice Roll 4 or 5):** 
+- **Goalkeeper Clears:** 
   - If the goalkeeper's Defense attribute is slightly higher than the shooter's Goal.
   - *Example:* `Go + 10 <= De < Go + 20` (The goalkeeper's Defense is up to 20 points higher than the shooter's Goal)
 
-- **Clean Save (Equivalent to Dice Roll 6):** 
+- **Clean Save:** 
   - If the goalkeeper's Defense attribute is significantly higher than the shooter's Goal.
   - *Example:* `Go + 20 <= De` (The goalkeeper's Defense is at least 20 points higher than the shooter's Goal)
 
