@@ -45,7 +45,7 @@
    3. [Number of Goals](#93-number-of-games)
    4. [Movement Count Rule](#94-movement-count-rule)
 10. [Miscellaneous Rules](#10-miscellaneous-rules)
-    1. [Simplified Version: Specific Attribute Values](#101-simplified-version-specific-attribute-values)
+    1. [Simplified Version: Specific Attribute Values](#101-simplified-version-specific-attribute-values-for-player-types)
 11. [Final Thoughts and Future Developments](#11-final-thoughts-and-future-developments)
 12. [Further Analysis](#12-further-analysis)
     1. [MOVE Action](#121-move-action)
@@ -152,7 +152,7 @@ Evade an opponent in an adjacent square, using Speed and Skill.
 - **Limit:** Each team can use Sprint 3 times per half.
 - **Outcome:** Allows rapid repositioning or advancement towards the goal, crucial for creating scoring opportunities or responding to threats.
 
-### 3.7 Shoot Action Analysis in XFutebol
+### 3.7 Shoot Action
 
 #### Mechanism:
 - The outcome of a SHOOT action is determined by comparing a combination of attributes for both the shooter and the goalkeeper.
@@ -177,7 +177,7 @@ Evade an opponent in an adjacent square, using Speed and Skill.
 - Players need to consider the positioning and attributes of their shooters and the opposing goalkeeper to maximize the chances of scoring successfully.
 
 
-### 3.8 Long Shoot Action (Exclusive to Long Experts)
+### 3.8 Long Shoot Action
 - **Mechanism:** Long Experts can perform a Long Shoot action, using their Goal and Strength. This action includes both straight and curved shots.
   - **Curved Shoot:** Involves choosing an intermediary square for the curve and the final goal square. Enhances the ability to score from angles not directly aligned with the goal.
 - **Distance:** The Long Shoot action extends up to 3 times the standard movement range of the piece.
