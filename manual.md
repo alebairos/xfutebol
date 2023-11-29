@@ -153,7 +153,10 @@ Key in defending the goal. Can move out of the small area but risks leaving the 
 Occurs when a player's MOVE targets an opponent's square, or an unsuccessful CHALLENGE is made.
 
 ### 6.2 Consequences of Fouls
-Accumulating 3 fouls results in a yellow card, 4 or more in a red card and the removal of a piece from the game.
+- **Team-Based Fouls Count:** The number of fouls is counted collectively for the whole team, rather than individually for each piece.
+- **Yellow Card:** The team receives a yellow card upon accumulating 3 fouls. This serves as a warning and may influence the team's play style.
+- **Red Card:** Upon reaching 4 or more fouls, the team is issued a red card. As a result, one of the team's pieces is chosen to be removed from the game. This represents a significant disadvantage and encourages teams to play cautiously to avoid fouls.
+
 
 ### 6.3 Free Kick Rules
 - **Mechanism:** Shooter's Skill and Goal vs. highest Defense in defender's barrier.
