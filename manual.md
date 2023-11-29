@@ -47,6 +47,15 @@
 10. [Miscellaneous Rules](#10-miscellaneous-rules)
     1. [Simplified Version: Specific Attribute Values](#101-simplified-version-specific-attribute-values)
 11. [Final Thoughts and Future Developments](#11-final-thoughts-and-future-developments)
+12. [Further Analysis](#12-further-analysis)
+    1. [MOVE Action](#121-move-action)
+    2. [PASS Action](#122-pass-action)
+    3. [LONG PASS Action](#123-long-pass-action)
+    4. [SHOOT Action](#124-shoot-action)
+    5. [LONG SHOOT Action](#125-long-shoot-action)
+    6. [DRIBBLE Action](#126-dribble-action)
+    7. [CHALLENGE Action](#127-challenge-action)
+    8. [SPRINT Action](#128-sprint-action)
 
 ## **1. Game Overview**
 ### **1.1 Objective**
@@ -126,7 +135,7 @@ Selecting the winning style is crucial as it sets the tone and strategy for the 
 - **Distance:** A simple pass extends up to 2 times the standard movement range of the piece. For example, an attacker can pass the ball up to 4 squares forward.
 - **Outcome:** Successful pass if the ball reaches a teammate; otherwise, potential interception by an opponent.
 
-### 3.3 Long Pass Action (Exclusive to Long Experts)
+### 3.3 Long Pass Action
 - **Mechanism:** Long Experts can send the ball to a distant teammate. They have the unique ability to perform both straight and curved long passes.
   - **Curved Pass:** Requires selecting an intermediary square where the curve starts and a final target square. Allows bypassing obstacles and reaching targets not in direct line of sight.
 - **Distance:** A long pass extends up to 3 times the standard movement range of the piece.
@@ -143,12 +152,30 @@ Evade an opponent in an adjacent square, using Speed and Skill.
 - **Limit:** Each team can use Sprint 3 times per half.
 - **Outcome:** Allows rapid repositioning or advancement towards the goal, crucial for creating scoring opportunities or responding to threats.
 
-### 3.7 Shoot Action
-- **Mechanism:** Shooter's Goal vs. goalkeeper's Defense.
-- **Distance:** The Shoot action extends up to 2 times the base MOVE range for the piece. For instance, an attacker can shoot from up to 4 squares away.
-- **Outcome:**
-  - If Goal > Defense: Goal is scored.
-  - If Defense ≥ Goal: Goalkeeper saves or deflects the shot.
+### 3.7 Shoot Action Analysis in XFutebol
+
+#### Mechanism:
+- The outcome of a SHOOT action is determined by comparing a combination of attributes for both the shooter and the goalkeeper.
+  - **Shooter's Attributes:** Goal + Strength + Skill.
+  - **Goalkeeper's Attributes:** Defense + Speed + Skill.
+
+#### Distance:
+- The Shoot action extends up to 2 times the base MOVE range for the piece.
+  - **Example:** An Attacker (A), who normally moves 2 squares forward, can shoot from up to 4 squares away from the goal.
+
+#### Outcome:
+- **Goal Scored:**
+  - If the total of the shooter's Goal, Strength, and Skill is greater than the total of the goalkeeper's Defense, Speed, and Skill.
+  - **Notation:** `Goal + Strength + Skill > Defense + Speed + Skill`
+- **Saved or Deflected by Goalkeeper:**
+  - If the goalkeeper's total of Defense, Speed, and Skill is equal to or greater than the total of the shooter's Goal, Strength, and Skill.
+  - **Notation:** `Defense + Speed + Skill ≥ Goal + Strength + Skill`
+
+### Notes:
+- The SHOOT action is a critical part of XFutebol gameplay, representing a direct attempt to score a goal.
+- The addition of Strength and Skill for the shooter and Speed for the goalkeeper adds depth to the strategy, making the success of shots more nuanced and dependent on a broader range of player attributes.
+- Players need to consider the positioning and attributes of their shooters and the opposing goalkeeper to maximize the chances of scoring successfully.
+
 
 ### 3.8 Long Shoot Action (Exclusive to Long Experts)
 - **Mechanism:** Long Experts can perform a Long Shoot action, using their Goal and Strength. This action includes both straight and curved shots.
@@ -295,3 +322,104 @@ Just for food for thought:
 
 **Note:** This table presents a conceptual view of individualized pieces in Futebol Chess. Each character has unique attributes that slightly exceed the standard ranges of their respective types. These variations exemplify how characters could be tailored in future versions of the game for specific strategies or playstyles.
 
+## 12. Further analysis
+
+### 12.1 MOVE Action Analysis in XFutebol
+
+#### 1. Eligible Pieces for MOVE Action:
+- **All pieces**, including special types (Dribblers, Goalers, Long Experts), perform a MOVE action based on the movement pattern of the regular player type they represent.
+
+#### 2. Target Squares for MOVE Action Based on Original Player Types:
+- **Defenders (D) and Long Experts (L):** Move 1 square in any direction.
+- **Midfielders (M):** Move 2 squares to the sides, 1 forward, 1 backward.
+- **Attackers (A), Dribblers (R), and Goalers (G):** Move 2 squares forward, 1 backward, 1 to the sides.
+- **Goal Keeper (K):** Move 1 square in any direction.
+
+#### 3. State of Origin and Target Squares:
+- **Origin Square:** Contains the moving piece; becomes empty after the move.
+- **Target Square:** Can be empty, contain a teammate (blocking the move), an opponent (resulting in a foul), or the ball.
+- **Field Markers:** Target square may have field markers indicating specific zones (goal area, penalty area).
+
+#### 4. Possible Results of MOVE Action:
+- **Successful Move:** Executed if the target square is empty or contains the ball.
+- **Blocked Move:** Cannot be completed if the target square contains a teammate.
+- **Foul:** Occurs if the target square has an opponent's piece; may lead to a free kick or other penalty.
+- **Ball Possession:** The moving piece takes possession if the target square contains the ball.
+
+### Notes:
+- The MOVE action is the primary means for players to reposition their pieces on the board.
+- The special player types' movement is determined by the regular player type they represent, adding strategic depth to the selection process.
+- Players must consider both the target square's status and the potential consequences of their move, including the possibility of committing a foul.
+
+
+### 12.2 PASS Action Analysis in XFutebol
+
+#### 1. Eligible Pieces for PASS Action:
+- **All pieces** are eligible to perform a PASS action. This includes Dribblers (R), Goalers (G), Long Experts (L), Midfielders (M), Attackers (A), Defenders (D), and the Goal Keeper (K).
+
+#### 2. Target Squares for PASS Action:
+- The target square for a PASS must be within line of sight and within the passing range of the piece, typically extending up to 2 times the standard movement range of the piece.
+- **Example:** An Attacker (A) who moves 2 squares forward can pass the ball up to 4 squares forward.
+
+#### 3. State of Origin and Target Squares:
+- **Origin Square:** Initially contains the piece performing the PASS action along with the ball. After the pass, the piece remains, but the ball moves to the target square.
+- **Target Square:** Must be empty or contain a teammate to receive the pass. Cannot contain an opponent's piece.
+
+#### 4. Possible Results of PASS Action:
+- **Successful Pass:** Completed if the target square is empty or contains a teammate who then receives the ball.
+- **Interception:** If an opponent's piece is in a position to challenge the pass (except for LONG PASS), the pass may be intercepted.
+- **Blocked Pass:** The pass is blocked if the target square contains an opponent's piece or if there is no clear line of sight due to obstructions.
+
+### Notes:
+- The PASS action is crucial for advancing the ball towards the opponent's goal and strategically positioning teammates.
+- Accurate assessment of the field and opponent's positioning is essential to avoid interceptions and make effective passes.
+- This action requires players to think ahead, considering both the immediate action and potential subsequent moves by opponents.
+
+### 12.3 LONG PASS Action Analysis in XFutebol
+
+#### 1. Eligible Pieces for LONG PASS Action:
+- **Long Experts (L):** Long Experts, regardless of their original type (Defender, Midfielder, Attacker, etc.), have the unique ability to perform a LONG PASS action.
+
+#### 2. Target Squares for LONG PASS Action:
+- The target square for a LONG PASS must be within the extended range of the Long Expert, typically extending up to 3 times the standard movement range of the piece.
+- **Range Based on Original Type:**
+  - If originally a Defender: Can cover up to 3 squares.
+  - If originally a Midfielder: Can cover up to 3 squares (since Midfielders can move 1 square forward, backward, or to the sides).
+  - If originally an Attacker: Can cover up to 6 squares forward (as Attackers can move 2 squares forward).
+
+#### 3. State of Origin and Target Squares:
+- **Origin Square:** Contains the Long Expert performing the LONG PASS along with the ball. After the pass, the piece remains, but the ball moves to the target square.
+- **Target Square:** Must be empty or contain a teammate to receive the pass. Cannot contain an opponent's piece.
+
+#### 4. Possible Results of LONG PASS Action:
+- **Successful Long Pass:** Completed if the target square is empty or contains a teammate who then receives the ball. LONG PASS actions are not interceptable.
+- **Blocked Long Pass:** The pass is blocked if the target square contains an opponent's piece or if there is no clear line of sight due to obstructions.
+
+### Notes:
+- The LONG PASS action enables Long Experts to send the ball over longer distances, crucial for bypassing crowded areas or rapidly changing the field's dynamic.
+- Players must strategically use LONG PASS, considering the original type of the Long Expert for determining the pass range and potential strategies.
+- The uninterceptible nature of LONG PASS makes it a key tactical action in XFutebol, allowing for unexpected and swift repositioning of the ball.
+
+### 12.4 SHOOT Action Analysis in XFutebol
+
+#### 1. Eligible Pieces for SHOOT Action:
+- **All pieces** are eligible to perform a SHOOT action. This includes Dribblers (R), Goalers (G), Long Experts (L), Midfielders (M), Attackers (A), Defenders (D), and the Goal Keeper (K).
+
+#### 2. Target Squares for SHOOT Action:
+- The target for a SHOOT action is the opponent's goal area.
+- The range of the SHOOT action is typically up to 2 times the standard movement range of the piece.
+   - **Example:** An Attacker (A), who normally moves 2 squares forward, can shoot from up to 4 squares away from the goal.
+
+#### 3. State of Origin and Target Squares:
+- **Origin Square:** Initially contains the piece performing the SHOOT action. After the shot, the piece remains, but the ball is directed towards the goal.
+- **Target Square:** The goal area squares where the shot is aimed.
+
+#### 4. Possible Results of SHOOT Action:
+- **Goal Scored:** If the SHOOT action successfully outmatches the goalkeeper's defense, based on the shooter's and goalkeeper's respective attributes.
+- **Saved by Goalkeeper:** If the goalkeeper's defense attribute is equal to or higher than the shooter's goal attribute.
+- **Missed Shot:** If the shot does not reach the goal area or goes off-target.
+
+### Notes:
+- The SHOOT action is a critical component of XFutebol, offering a direct attempt to score a goal.
+- Accuracy and the strategic use of shooters based on their attributes are key to maximizing the effectiveness of SHOOT actions.
+- Players need to position their pieces effectively, taking into account the distance and angle of the shot to increase the chances of scoring.
