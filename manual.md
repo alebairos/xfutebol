@@ -10,7 +10,8 @@
    2. [Team Composition](#22-team-composition)
    3. [Goal Area](#23-goal-area)
    4. [Penalty Area](#24-penalty-area)
-   5. [Starting the Game](#25-starting-the-game)
+   5. [Turn Structure](#25-turn-structure)
+   6. [Starting the Game](#26-starting-the-game)
 3. [Player Movement and Actions](#3-player-movement-and-actions)
    1. [Move Action](#31-move-action)
    2. [Pass Action](#32-pass-action)
@@ -44,9 +45,7 @@
    3. [Number of Goals](#93-number-of-games)
    4. [Movement Count Rule](#94-movement-count-rule)
 10. [Miscellaneous Rules](#10-miscellaneous-rules)
-    1. [Substitutions](#101-substitutions)
-    2. [Half-Time and Game Duration](#102-half-time-and-game-duration)
-    3. [Simplified Version: Specific Attribute Values](#103-simplified-version-specific-attribute-values)
+    1. [Simplified Version: Specific Attribute Values](#101-simplified-version-specific-attribute-values)
 11. [Final Thoughts and Future Developments](#11-final-thoughts-and-future-developments)
 
 ## **1. Game Overview**
@@ -87,7 +86,12 @@
 - **Importance:** Fouls committed by the defending team in the Penalty Area result in a penalty kick for the attacking team.
 - **Player Awareness:** Understanding the boundaries and strategic significance of the Penalty Area is essential for effective gameplay.
 
-### **2.5 Starting the Game**
+### **2.5 Turn Structure**
+- **Two Movements per Turn:** In each turn, a player can make two movements. 
+- **Mandatory MOVE:** Out of these two movements, at least one must be a MOVE action. The other can be any action, including another MOVE.
+- **Strategic Consideration:** This rule encourages players to strategically plan their movements and actions, balancing between advancing their pieces and executing specific actions like Pass, Dribble, or Shoot.
+
+### **2.6 Starting the Game**
 *The game starts with a coin toss to decide the starting team. Players should keep in mind the strategic importance of the Goal and Penalty Areas as they begin their play.*
 
 
@@ -166,6 +170,35 @@ Goals are scored by successfully executing a Shoot action against the opponent's
 
 ### 5.2 Goalkeeper's Role
 Key in defending the goal. Can move out of the goal area but risks leaving the goal unguarded.
+
+#### 1. **Goal Scoring Attempt (Shot or Penalty):**
+- **Mechanism:** The outcome is determined by comparing the shooter's Goal attribute with the goalkeeper's Defense attribute.
+- **Attributes:** 
+  - Shooter's Goal (Go)
+  - Goalkeeper's Defense (De)
+
+#### 2. **Outcome Determination:**
+- **Goal Scored (Equivalent to Dice Roll 1 or 2):** 
+  - If the shooter's Goal attribute is significantly higher than the goalkeeper's Defense.
+  - *Example:* `Go >= De + 20` (The shooter's Goal is at least 20 points higher than the goalkeeper's Defense)
+
+- **Save with Rebound (Equivalent to Dice Roll 3):** 
+  - If the shooter's Goal attribute is slightly higher or nearly equal to the goalkeeper's Defense.
+  - *Example:* `De <= Go < De + 20` (The shooter's Goal is greater than or equal to the goalkeeper's Defense but less than 20 points higher)
+
+- **Goalkeeper Clears (Equivalent to Dice Roll 4 or 5):** 
+  - If the goalkeeper's Defense attribute is slightly higher than the shooter's Goal.
+  - *Example:* `Go + 10 <= De < Go + 20` (The goalkeeper's Defense is up to 20 points higher than the shooter's Goal)
+
+- **Clean Save (Equivalent to Dice Roll 6):** 
+  - If the goalkeeper's Defense attribute is significantly higher than the shooter's Goal.
+  - *Example:* `Go + 20 <= De` (The goalkeeper's Defense is at least 20 points higher than the shooter's Goal)
+
+### Notes:
+- These thresholds (e.g., 20 points difference) are examples and can be adjusted based on gameplay balance needs.
+- This system provides a more strategic and predictable approach to determining outcomes, as it is based on the players' attributes rather than the randomness of a dice roll.
+- The specific numbers (like 20 points difference) are adjustable to ensure the game remains balanced and enjoyable for all levels of players.
+
 
 ## 6. Fouls and Penalties
 ### 6.1 Defining a Foul
