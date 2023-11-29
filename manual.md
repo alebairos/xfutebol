@@ -10,6 +10,7 @@
    1. [Board Configuration](#21-board-configuration)
    2. [Team Composition](#22-team-composition)
    3. [Starting the Game](#23-starting-the-game)
+   4. [Defining the Winning Style](#24-defining-the-winning-style)
 3. [Player Movement and Actions](#3-player-movement-and-actions)
    1. [Move Action](#31-move-action)
    2. [Pass Action](#32-pass-action)
@@ -70,17 +71,19 @@ The game consists of two chess boards aligned to create a 16x8 grid, pieces repr
 Align two chess boards to form a 16x8 grid, representing an extended soccer field.
 
 ### 2.2 Team Composition
-Each team consists of 11 players. At the beginning of the game, players select two special pieces from each of the following categories: Dribblers, Goalers, and Long Experts. The remaining five players include the Goal Keeper, along with a combination of Attackers, Defenders, and Midfielders. This selection forms the basis of the team's strategy, influencing their approach to both offense and defense throughout the game.
-
-- **Special Pieces Selection:**
-  - Choose 2 Dribblers: Skilled in evading opponents and maintaining ball control.
-  - Choose 2 Goalers: Focused on scoring, especially effective in shoot actions.
-  - Choose 2 Long Experts: Specialized in executing uninterceptible long-range passes and shots, with the ability to perform both straight and curved actions.
-- **Regular Players:**
-  - The remaining players, including the Goal Keeper, are chosen to balance the team composition, focusing on defense, midfield control, and attack strategies.
+Each team consists of 11 players. At the beginning of the game, players select two special pieces from each of the following categories: Dribblers, Goalers, and Long Experts. The remaining five players include the Goal Keeper, along with a combination of Attackers, Defenders, and Midfielders.
 
 ### 2.3 Starting the Game
 The game starts with a coin toss to decide the starting team.
+
+### 2.4 Defining the Winning Style
+Before beginning the game, players must agree on the winning style. They can choose between the following options:
+- **Golden Goal:** The game ends immediately when the first goal is scored.
+- **Two Halves with Total Score:** The winner is determined by the highest total score at the end of both halves, with a penalty shootout as a tiebreaker in case of a draw.
+- **Number of Goals:** The game continues until a team reaches a predetermined number of goals.
+- **Movement Count Rule:** If no goals are scored within a set number of movements, the winner is decided by a penalty shootout.
+
+Selecting the winning style is crucial as it sets the tone and strategy for the entire game. Players should consider their team's strengths and preferred tactics when choosing the winning style.
 
 
 ## 3. Player Movement and Actions
