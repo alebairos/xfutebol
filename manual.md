@@ -78,7 +78,11 @@
 - **Definition:** The Goal Area is a crucial zone on the game board, located at each end of the board, surrounding the goal.
 - **Location:** For a 16x8 board, the Goal Area is defined as the squares C1-F1 and C8-F8.
 - **Significance:** The Goal Keeper usually occupies this area. If the Goal Keeper is outside of the Goal Area, the goal is considered empty, increasing the chance of scoring.
-- **Player Awareness:** Players should be acutely aware of the Goal Area on their own board, as it greatly influences defensive and offensive strategies.
+- **Scoring a Goal:**
+  - **Eligibility:** Any piece on the field can attempt a shot towards the Goal Area.
+  - **Mechanism:** A goal is scored when the ball successfully crosses any of the four squares of the Goal Area. This is determined by the shooter's ability to outmatch the goalkeeper's defense, based on their respective attributes.
+  - **Goalkeeper's Defense:** The Goal Keeper attempts to defend against shots aimed at the Goal Area. The outcome of this defense is determined by comparing the relevant attributes of the shooter and the goalkeeper.
+- **Player Awareness:** Players should be acutely aware of the Goal Area on their own board. It is important for attackers to recognize opportunities to score, and for the goalkeeper to be strategically positioned for effective defense.
 
 ### 2.4 Penalty Area
 - **Definition:** The Penalty Area is a larger zone that includes the Goal Area and additional squares directly in front of the goal.
@@ -263,7 +267,7 @@ The following table defines the feature values of each of the Player Piece types
 
 This manual provides a comprehensive guide to playing Futebol Chess, covering all aspects of the game from setup to gameplay mechanics. The inclusion of special player types like Long Experts adds strategic depth, and the specific attribute values for the simplified version make it accessible for beginners.
 
-## Final Thoughts and Future Developments
+## 11. Final Thoughts and Future Developments
 
 This manual provides a comprehensive guide to Futebol Chess, a game that combines the strategic elements of chess with the dynamic gameplay of soccer. Whether you are a seasoned strategist or a casual player, Futebol Chess offers a unique and engaging experience. Enjoy the game, and may the best strategist win!
 
