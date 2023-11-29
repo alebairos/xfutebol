@@ -46,6 +46,8 @@
     1. [Substitutions](#101-substitutions)
     2. [Half-Time and Game Duration](#102-half-time-and-game-duration)
     3. [Simplified Version: Specific Attribute Values](#103-simplified-version-specific-attribute-values)
+11. [Final Thoughts and Future Developments](#11-final-thoughts-and-future-developments)
+
 
 ## 1. Game Overview
 ### 1.1 Objective
@@ -212,3 +214,32 @@ The length of each half and total game time.
 | Long Experts  | 70    | 60    | 50       | 70   | 40      |
 
 This manual provides a comprehensive guide to playing Futebol Chess, covering all aspects of the game from setup to gameplay mechanics. The inclusion of special player types like Long Experts adds strategic depth, and the specific attribute values for the simplified version make it accessible for beginners.
+
+## Final Thoughts and Future Developments
+
+This manual provides a comprehensive guide to Futebol Chess, a game that combines the strategic elements of chess with the dynamic gameplay of soccer. Whether you are a seasoned strategist or a casual player, Futebol Chess offers a unique and engaging experience. Enjoy the game, and may the best strategist win!
+
+### Future Developments
+As Futebol Chess evolves, there is potential for the game to incorporate individual scores for each piece, rather than generalized scores for piece types. This advancement could lead to the introduction of unique characters or players, each with their distinct set of attributes. For example:
+
+- **Action Heroes or Iconic Soccer Players:** Future versions of the game might feature individual characters, such as famous soccer players or action heroes, each with unique abilities and scores. This would add a layer of personalization and depth to the game, allowing players to build teams based on individual strengths and strategies.
+
+- **Customizable Player Abilities:** This development could also open the door to more customizable gameplay, where players can adjust the attributes of their pieces according to their playing style or strategy preferences.
+
+These potential developments aim to enhance player engagement and add a new dimension to the strategic planning in Futebol Chess, making each game an even more unique and personalized experience.
+
+### Sample Table of Individualized Fictional Pieces
+Just for food for thought:
+
+| Name             | Type        | Speed | Skill | Strength | Goal | Defense |
+|------------------|-------------|-------|-------|----------|------|---------|
+| Leo the Swift    | Attacker    | 85    | 55    | 45       | 90   | 35      |
+| Isabel the Wall  | Defender    | 45    | 45    | 75       | 35   | 85      |
+| Midas the Maestro| Midfielder  | 65    | 75    | 55       | 55   | 65      |
+| Guardian Grace   | Goal Keeper | 35    | 45    | 85       | 65   | 95      |
+| Zigzag Zoe       | Dribbler    | 95    | 85    | 35       | 45   | 45      |
+| Hawk-Eye Hector  | Goaler      | 55    | 55    | 65       | 95   | 55      |
+| Curveball Callie | Long Expert | 75    | 65    | 55       | 75   | 45      |
+
+**Note:** This table presents a conceptual view of individualized pieces in Futebol Chess. Each character has unique attributes that slightly exceed the standard ranges of their respective types. These variations exemplify how characters could be tailored in future versions of the game for specific strategies or playstyles.
+
