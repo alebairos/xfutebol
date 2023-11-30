@@ -142,15 +142,92 @@ Selecting the winning style is crucial as it sets the tone and strategy for the 
 - **Outcome:** Successful long pass if the ball reaches a teammate; risk of interception or misdirection increases with distance and complexity of the trajectory.
 
 ### 3.4 Challenge Action
-Attempt to take the ball from an opponent, successful based on Strength and Defense.
+
+#### Mechanism:
+- The outcome of a CHALLENGE action is determined by comparing a combination of attributes for the challenging piece and the opponent who has the ball or is the intended recipient of the ball.
+  - **Challenger's Attributes:** Speed + Strength + Defense.
+  - **Opponent's Attributes (Ball Holder or Target):** Speed + Strength + Skill.
+
+#### Conditions for CHALLENGE:
+- A CHALLENGE can be attempted in the following scenarios:
+  - To intercept the ball coming from a SHOOT action.
+  - To intercept the ball coming from a PASS action.
+  - To intercept the ball coming from a LONG SHOOT action.
+- **Exception:** LONG PASS actions cannot be intercepted by a CHALLENGE.
+
+#### Distance:
+- The CHALLENGE action can be attempted on an adjacent square where the opponent with the ball is located or in the path of the ball during a SHOOT, PASS, or LONG SHOOT action.
+  - **Example:** A Defender (D) next to an Attacker (A) who has the ball, or in the path of a shot, can attempt to take the ball with a CHALLENGE.
+
+#### Outcome:
+- **Successful Challenge:**
+  - If the total of the challenger's Speed, Strength, and Defense is greater than the total of the ball holder's Speed, Strength, and Skill.
+  - **Notation:** `Speed + Strength + Defense > Speed + Strength + Skill`
+- **Failed Challenge:**
+  - If the ball holder's total of Speed, Strength, and Skill is equal to or greater than the total of the challenger's Speed, Strength, and Defense.
+  - **Notation:** `Speed + Strength + Skill ≥ Speed + Strength + Defense`
+- **Tie:**
+  - If there is a tie, the play continues normally, with the ball following its intended path.
+
+### Notes:
+- The CHALLENGE action is a critical defensive tactic in XFutebol, enabling players to intervene in key moments to regain possession or prevent scoring.
+- The ability to challenge SHOOT, PASS, and LONG SHOOT actions introduces a layer of strategic defense and quick decision-making.
+- The rule for a tie, allowing the play to continue, adds a dynamic element to the game, ensuring that the action remains fluid and unpredictable.
 
 ### 3.5 Dribble Action
-Evade an opponent in an adjacent square, using Speed and Skill.
+
+#### Mechanism:
+- The outcome of a DRIBBLE action is determined by comparing a combination of attributes for the dribbling piece and the adjacent opponent.
+  - **Dribbler's Attributes:** Speed + Skill.
+  - **Opponent's Attributes:** Speed + Defense.
+
+#### Conditions for DRIBBLE:
+- A DRIBBLE can be attempted when an opposing player is in an adjacent square.
+- The action is used to evade the opponent and maintain possession of the ball.
+
+#### Distance:
+- The DRIBBLE action is executed within an adjacent square to the dribbling piece.
+  - **Example:** A Midfielder (M) with the ball can attempt to dribble past an adjacent Defender (D).
+
+#### Outcome:
+- **Successful Dribble:**
+  - If the dribbler's combined Speed and Skill is greater than the opponent's combined Speed and Defense.
+  - **Notation:** `Speed + Skill > Speed + Defense`
+- **Failed Dribble:**
+  - If the opponent's combined Speed and Defense is equal to or greater than the dribbler's combined Speed and Skill.
+  - **Notation:** `Speed + Defense ≥ Speed + Skill`
+- **Tie:**
+  - If there is a tie, the dribbling piece maintains possession but fails to advance past the opponent.
+
+### Notes:
+- The DRIBBLE action is a crucial maneuver in XFutebol for players to advance the ball and evade opponents, especially in tightly contested areas.
+- This action highlights the importance of individual player attributes, particularly Speed and Skill, in successful ball control and evasion.
+- Executing effective DRIBBLE actions requires strategic consideration of both the dribbler's and the adjacent opponent's strengths and weaknesses.
 
 ### 3.6 Sprint Action
-- **Description:** Doubles the movement capacity of a piece for one turn.
-- **Limit:** Each team can use Sprint 3 times per half.
-- **Outcome:** Allows rapid repositioning or advancement towards the goal, crucial for creating scoring opportunities or responding to threats.
+
+#### Mechanism:
+- The SPRINT action doubles the movement capacity of a piece for one turn.
+  - **Effect on Piece:** Increases the range of movement, allowing the piece to cover more ground on the field.
+
+#### Conditions for SPRINT:
+- SPRINT can be used in any situation where rapid movement or repositioning is desired.
+- **Strategic Application:** Ideal for advancing towards the goal, retreating for defense, or moving to a key position on the field.
+
+#### Distance:
+- The SPRINT action allows a piece to move up to double its standard movement range in a single turn.
+  - **Example:** A Midfielder (M) who normally moves 2 squares in any direction can move up to 4 squares in any direction with a SPRINT.
+
+#### Outcome:
+- **Effective Sprint:** Successfully covers the intended distance, allowing for rapid repositioning or advancement.
+- **Limitation and Recovery Period:**
+  - **Initial Limit:** Each team can use SPRINT 3 times per half without penalties.
+  - **Additional SPRINTs:** Teams can opt to use more than 3 SPRINTs. However, for each SPRINT beyond the third, the piece used will be temporarily removed from the field for a 90-second recovery period to simulate fatigue.
+
+### Notes:
+- The SPRINT action adds a dynamic and fast-paced element to XFutebol, reflecting the agility and speed found in actual soccer.
+- The ability to use additional SPRINTs beyond the initial limit introduces a trade-off between immediate tactical gain and short-term player unavailability, requiring careful strategic planning.
+- Effective use of SPRINTs can significantly influence the game's momentum, making it a potent tool in a team's tactical arsenal.
 
 ### 3.7 Shoot Action
 
@@ -324,7 +401,7 @@ Just for food for thought:
 
 ## 12. Further analysis
 
-### 12.1 MOVE Action Analysis in XFutebol
+### 12.1 MOVE Action
 
 #### 1. Eligible Pieces for MOVE Action:
 - **All pieces**, including special types (Dribblers, Goalers, Long Experts), perform a MOVE action based on the movement pattern of the regular player type they represent.
@@ -352,7 +429,7 @@ Just for food for thought:
 - Players must consider both the target square's status and the potential consequences of their move, including the possibility of committing a foul.
 
 
-### 12.2 PASS Action Analysis in XFutebol
+### 12.2 PASS Action
 
 #### 1. Eligible Pieces for PASS Action:
 - **All pieces** are eligible to perform a PASS action. This includes Dribblers (R), Goalers (G), Long Experts (L), Midfielders (M), Attackers (A), Defenders (D), and the Goal Keeper (K).
@@ -375,7 +452,7 @@ Just for food for thought:
 - Accurate assessment of the field and opponent's positioning is essential to avoid interceptions and make effective passes.
 - This action requires players to think ahead, considering both the immediate action and potential subsequent moves by opponents.
 
-### 12.3 LONG PASS Action Analysis in XFutebol
+### 12.3 LONG PASS Action
 
 #### 1. Eligible Pieces for LONG PASS Action:
 - **Long Experts (L):** Long Experts, regardless of their original type (Defender, Midfielder, Attacker, etc.), have the unique ability to perform a LONG PASS action.
@@ -400,7 +477,7 @@ Just for food for thought:
 - Players must strategically use LONG PASS, considering the original type of the Long Expert for determining the pass range and potential strategies.
 - The uninterceptible nature of LONG PASS makes it a key tactical action in XFutebol, allowing for unexpected and swift repositioning of the ball.
 
-### 12.4 SHOOT Action Analysis in XFutebol
+### 12.4 SHOOT Action
 
 #### 1. Eligible Pieces for SHOOT Action:
 - **All pieces** are eligible to perform a SHOOT action. This includes Dribblers (R), Goalers (G), Long Experts (L), Midfielders (M), Attackers (A), Defenders (D), and the Goal Keeper (K).
@@ -423,3 +500,112 @@ Just for food for thought:
 - The SHOOT action is a critical component of XFutebol, offering a direct attempt to score a goal.
 - Accuracy and the strategic use of shooters based on their attributes are key to maximizing the effectiveness of SHOOT actions.
 - Players need to position their pieces effectively, taking into account the distance and angle of the shot to increase the chances of scoring.
+
+### 12.5 LONG SHOOT Action
+
+#### 1. Eligible Pieces for LONG SHOOT Action:
+- **All pieces** are eligible to perform a LONG SHOOT action. This includes Dribblers (R), Goalers (G), Long Experts (L), Midfielders (M), Attackers (A), Defenders (D), and the Goal Keeper (K).
+
+#### 2. Target Squares for LONG SHOOT Action:
+- The target for a LONG SHOOT action is the opponent's goal area.
+- The range of the LONG SHOOT action is typically up to 3 times the standard movement range of the piece.
+   - **Example:** An Attacker (A), who normally moves 2 squares forward, can attempt a long shoot from up to 6 squares away from the goal.
+
+#### 3. State of Origin and Target Squares:
+- **Origin Square:** Initially contains the piece performing the LONG SHOOT action. After the shot, the piece remains, but the ball is directed towards the goal.
+- **Target Square:** The goal area squares where the long shot is aimed.
+
+#### 4. Possible Results of LONG SHOOT Action:
+- **Goal Scored:** If the LONG SHOOT action successfully outmatches the goalkeeper's defense, based on the shooter's and goalkeeper's respective attributes.
+- **Saved by Goalkeeper:** If the goalkeeper's defense attribute is equal to or higher than the shooter's goal attribute.
+- **Missed Shot:** If the long shot does not reach the goal area or goes off-target.
+- **Intercepted in CHALLENGE:** The LONG SHOOT can be intercepted if there is an opponent's piece in one of the squares along the trajectory of the shot. The interception is determined by a CHALLENGE action, where the opposing piece attempts to block or take control of the ball.
+
+### Notes:
+- The LONG SHOOT action adds a strategic layer to the game, enabling players to attempt scoring from a distance.
+- The interception possibility via a CHALLENGE adds an element of risk, making the decision to perform a LONG SHOOT more tactical.
+- Players need to assess the field for potential interceptors and weigh the risk of interception against the chance of scoring.
+
+
+### Notes:
+- The LONG SHOOT action allows players to attempt to score from greater distances, adding a dynamic element to the game.
+- The increased range requires precise judgment and strategic positioning, as well as consideration of the shooter's attributes.
+- Successfully executing a LONG SHOOT depends on the shooter's skill and the goalkeeper's ability to defend, making it a high-risk, high-reward action.
+
+- This action requires players to consider the risk and reward of attempting a goal from a distance, factoring in both the shooter's and the goalkeeper's capabilities.
+
+### 12.6 Dribble Action
+
+#### 1. Eligible Pieces for DRIBBLE Action:
+- **All pieces** are eligible to perform a DRIBBLE action. This includes Dribblers (R), Goalers (G), Long Experts (L), Midfielders (M), Attackers (A), Defenders (D), and the Goal Keeper (K).
+
+#### 2. Target Squares for DRIBBLE Action:
+- The target for a DRIBBLE action is typically an adjacent square in any direction.
+- The DRIBBLE action is used to evade an opponent piece in an adjacent square while maintaining possession of the ball.
+
+#### 3. State of Origin and Target Squares:
+- **Origin Square:** Initially contains the piece performing the DRIBBLE action along with the ball.
+- **Target Square:** Can be adjacent in any direction, ideally empty or containing an opponent's piece to be dribbled past.
+
+#### 4. Possible Results of DRIBBLE Action:
+- **Successful Dribble:** If the dribbling piece's Speed and Skill successfully outmatch the adjacent opponent's Speed and Defense.
+- **Failed Dribble:** If the adjacent opponent's Speed and Defense are equal to or greater than the dribbling piece's Speed and Skill.
+- **Tie:** In case of a tie, the dribbling piece maintains possession, but the DRIBBLE action fails to advance the ball.
+
+### Notes:
+- The DRIBBLE action is essential in XFutebol for advancing the ball and evading opponents, particularly in crowded areas of the field.
+- Dribblers (R) might have an advantage in this action due to their likely higher Speed and Skill attributes.
+- Successful DRIBBLE maneuvers require strategic decision-making, considering both the dribbler's and the opponent's attributes.
+- The action adds a layer of tactical play, emphasizing the importance of individual skill in ball control and evasion.
+
+### 12.7 Challenge Action
+
+#### 1. Eligible Pieces for CHALLENGE Action:
+- **All pieces** are eligible to perform a CHALLENGE action. This includes Dribblers (R), Goalers (G), Long Experts (L), Midfielders (M), Attackers (A), Defenders (D), and the Goal Keeper (K).
+
+#### 2. Target Squares for CHALLENGE Action:
+- The target for a CHALLENGE action is the square occupied by an opponent's piece who has the ball or is the intended recipient of a ball in motion (during SHOOT, PASS, or LONG SHOOT actions).
+- CHALLENGE actions are typically executed in adjacent squares to the challenging piece.
+
+#### 3. State of Origin and Target Squares:
+- **Origin Square:** Initially contains the piece performing the CHALLENGE action.
+- **Target Square:** Occupied by the opponent's piece with the ball or the intended recipient of the ball.
+
+#### 4. Possible Results of CHALLENGE Action:
+- **Successful Challenge:** If the total of the challenger's Speed, Strength, and Defense is greater than the total of the opponent's Speed, Strength, and Skill.
+- **Failed Challenge:** If the opponent's total of Speed, Strength, and Skill is equal to or greater than the total of the challenger's Speed, Strength, and Defense.
+- **Tie:** If there is a tie in the total attributes, the ball continues its intended path; the CHALLENGE action neither gains possession of the ball nor disrupts its course.
+
+### Notes:
+- The CHALLENGE action is a fundamental defensive tactic in XFutebol, enabling players to counter opponents' offensive moves and potentially regain possession.
+- It introduces a critical decision-making aspect to the game, where players must assess the risk and opportunity of challenging an opponent's action.
+- The ability to CHALLENGE various actions like SHOOT, PASS, and LONG SHOOT (excluding LONG PASS) adds strategic depth and dynamic interactions between players on the field.
+
+### 12.8 Sprint Action
+
+#### 1. Eligible Pieces for SPRINT Action:
+- **All pieces** are eligible to perform a SPRINT action. This includes Dribblers (R), Goalers (G), Long Experts (L), Midfielders (M), Attackers (A), Defenders (D), and the Goal Keeper (K).
+
+#### 2. Target Squares for SPRINT Action:
+- The target for a SPRINT action is any square within the double movement range of the piece.
+- The SPRINT action is used to rapidly advance or reposition the piece on the field, typically for strategic positioning or responding to threats.
+
+#### 3. State of Origin and Target Squares:
+- **Origin Square:** Initially contains the piece performing the SPRINT action.
+- **Target Square:** Can be any square within the double movement range of the piece, ideally positioning the piece advantageously on the field.
+
+#### 4. Possible Results of SPRINT Action:
+- **Successful Sprint:** The piece successfully moves to the target square, covering a greater distance than usual in a single turn.
+- **Failed Sprint:** The SPRINT action fails if the target square is not within the permissible range or is occupied by another piece (either teammate or opponent).
+- **Tie:** Not applicable as SPRINT does not involve a direct contest with another piece.
+
+#### 5. Limitation and Recovery Period for SPRINTs:
+- **Team Limit:** A team can perform up to 3 SPRINTs per half without any penalty.
+- **Additional SPRINTs:** Teams can decide to use more than 3 SPRINTs. However, for each SPRINT beyond the third, the piece used will be temporarily removed from the field for a 90-second recovery period.
+- **Recovery Mechanism:** The recovery period simulates fatigue and recovery, reflecting the physical demands of an actual sprint. The piece is sidelined and cannot participate in the game during this time.
+- **Strategic Consideration:** This rule requires teams to weigh the benefits of additional SPRINTs against the cost of temporarily losing a piece from the field, adding a layer of depth to tactical decisions.
+
+### Notes:
+- The SPRINT action, with its limitation and recovery period, mirrors real-life athletic constraints, bringing an element of realism to XFutebol.
+- The decision to use additional SPRINTs becomes a significant strategic choice, balancing immediate tactical gain against short-term numerical disadvantage.
+- Managing the use of SPRINTs effectively becomes crucial, especially in critical phases of the game or when planning for specific strategies.
