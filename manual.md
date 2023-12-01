@@ -56,6 +56,8 @@
     6. [DRIBBLE Action](#126-dribble-action)
     7. [CHALLENGE Action](#127-challenge-action)
     8. [SPRINT Action](#128-sprint-action)
+13. [Game Setup Form](#13-game-setup-form)
+14. [Match Record Form](#14-match-record-form)
 
 ## **1. Game Overview**
 ### **1.1 Objective**
@@ -699,3 +701,127 @@ Just for food for thought:
 - The SPRINT action, with its limitation and recovery period, mirrors real-life athletic constraints, bringing an element of realism to XFutebol.
 - The decision to use additional SPRINTs becomes a significant strategic choice, balancing immediate tactical gain against short-term numerical disadvantage.
 - Managing the use of SPRINTs effectively becomes crucial, especially in critical phases of the game or when planning for specific strategies.
+
+## 13. Game Setup Form
+
+### Match Information
+- **Date of Match:** `__________`
+- **Time of Match:** `__________`
+- **Teams Playing:**
+  - **Visitor Team Name:** `_______________`
+  - **Home Team Name:** `________________`
+
+### Team Configuration
+_Record the composition and setup of each team._
+
+#### Visitor Team Configuration
+- **Team Members:**
+  - Goal Keeper (K): `Player Name`
+  - Defenders (D): `Player Names`
+  - Midfielders (M): `Player Names`
+  - Attackers (A): `Player Names`
+- **Special Players Selection:**
+  - Dribblers (R): `Player Names`
+  - Goalers (G): `Player Names`
+  - Long Experts (L): `Player Names`
+
+#### Home Team Configuration
+- **Team Members:**
+  - Goal Keeper (K): `Player Name`
+  - Defenders (D): `Player Names`
+  - Midfielders (M): `Player Names`
+  - Attackers (A): `Player Names`
+- **Special Players Selection:**
+  - Dribblers (R): `Player Names`
+  - Goalers (G): `Player Names`
+  - Long Experts (L): `Player Names`
+
+### Board Setup
+- **Initial Positioning Scheme:**
+  - Describe the initial arrangement of pieces on the board for both teams.
+  - **Visitor Team:** `_______________`
+  - **Home Team:** `________________`
+- **Board Configuration:**
+  - Confirm the alignment of the two chess boards to form the 16x8 grid.
+
+### Winning Style Selection
+- **Selected Winning Style:** `_____________`
+- **Rationale for Selection:** 
+  - Explain why this winning style was chosen based on the team's strengths and strategies.
+
+### Pre-Game Notes
+- **Team Strategies:**
+  - Outline the initial strategies or tactics planned by each team.
+  - **Visitor Team Strategy:** `_______________`
+  - **Home Team Strategy:** `________________`
+- **Expected Challenges:**
+  - Note any anticipated challenges or key areas of focus for the match.
+
+---
+
+_This form is used to document the setup and initial strategies for a XFutebol match. It captures essential details regarding team configurations, board setup, and the chosen winning style, laying the groundwork for the game's strategic play._
+
+## 14. Match Record Form
+
+### Match Information
+- **Date of Match:** `__________`
+- **Time of Match:** `__________`
+- **Teams Playing:**
+  - **Visitor Team Name:** `_______________`
+  - **Home Team Name:** `________________`
+
+### Team Performance Record
+_Record each team's performance metrics separately._
+
+#### Visitor Team
+- **Fouls Committed:** 
+  - _Number of Fouls:_ `_____`
+- **Yellow Cards:** 
+  - _Number of Yellow Cards:_ `_____`
+- **Red Cards:** 
+  - _Number of Red Cards:_ `_____`
+- **Sprints Used:** 
+  - _Number of Sprints Used:_ `_____`
+  - _Players Temporarily Removed for Extra Sprints:_
+    - `Player 1 (Number and Duration):_____`
+    - `Player 2 (Number and Duration):_____`
+    - _..._
+
+#### Home Team
+- **Fouls Committed:** 
+  - _Number of Fouls:_ `_____`
+- **Yellow Cards:** 
+  - _Number of Yellow Cards:_ `_____`
+- **Red Cards:** 
+  - _Number of Red Cards:_ `_____`
+- **Sprints Used:** 
+  - _Number of Sprints Used:_ `_____`
+  - _Players Temporarily Removed for Extra Sprints:_
+    - `Player 1 (Number and Duration):_____`
+    - `Player 2 (Number and Duration):_____`
+    - _..._
+
+### Game Progression Record
+- **Goals Scored:**
+  - _Visitor Team Goals (Number and Scoring Players):_ `_____`
+  - _Home Team Goals (Number and Scoring Players):_ `_____`
+- **Key Events:**
+  - _Significant moves, challenges, and tactical changes:_
+    - `[Time] Event Description:______________`
+    - `[Time] Event Description:______________`
+    - _..._
+
+### Match Outcome
+- **Final Score:**
+  - _Visitor Team:_ `_____`
+  - _Home Team:_ `_____`
+- **Winning Style Outcome (if applicable):**
+  - _Description of how the winning style influenced the outcome:_ `____________`
+
+### Referee Notes
+- **Observations and Comments:**
+  - _Referee's notes on the match, any unusual incidents, or important considerations:_ `____________`
+
+---
+
+_This form serves as a comprehensive record of the match, capturing both quantitative data (like fouls and goals) and qualitative insights (like key events and referee notes). It's crucial for post-match analysis, strategic adjustments, and maintaining the integrity of the game's rules and spirit._
