@@ -61,8 +61,22 @@
 ### **1.1 Objective**
 *Players compete to score goals by strategically moving pieces on a chessboard-like soccer field. The game combines elements of chess and soccer, requiring tactical thinking and careful planning.*
 
-### **1.2 Game Components**
-*The game consists of two chess boards aligned to create a 16x8 grid, pieces representing different player types, and markers for tracking fouls and cards.*
+### 1.2 Game Components
+
+The game components are designed to facilitate clear and effective gameplay. They include:
+
+- **Two Chess Boards:** Aligned side-by-side to create a 16x8 grid. This forms the playing field.
+- **Pieces:** Representing different player types, each with unique abilities and roles in the game.
+- **Ball:** Serves as the primary game object and is also used to mark the position of fouls on the field.
+- **Markers:** 
+  - **Foul Markers:** The ball is used to indicate the location of fouls.
+  - **Card Markers:** The number of fouls and subsequent cards (yellow and red) can be tracked on the match record form using a pen. Alternatively, yellow and red pawns from a Ludo game can be used to visually represent accumulated cards.
+  - **Area Markers:** Blue pawns from a Ludo game can be used to denote the penalty area limits, and green pawns for the goal area.
+  - **Sprint Markers:** Sprints used by each team can be tracked on the match record form with a pen.
+- **Forms:** For setting up the game, recording match events during play, and summarizing post-match information.
+- **Erasable Pen:** For marking point boosts in penalty and goal areas, drawing areas on the board, and filling out forms.
+
+These components collectively enhance the strategic and interactive elements of the game, offering a comprehensive and engaging gameplay experience.
 
 ### **1.3 Player Types**
 - **Attackers (Forwards):** Fast, goal-oriented players.
@@ -76,39 +90,89 @@
 
 
 
-## **2. Game Setup**
-### **2.1 Board Configuration**
+## 2. Game Setup
+
+### 2.1 Board Configuration
 *Align two chess boards to form a 16x8 grid, representing an extended soccer field.*
 
-### **2.2 Team Composition**
+### 2.2 Team Composition
 *Each team consists of 11 players. At the beginning of the game, players select two special pieces from each of the following categories: Dribblers, Goalers, and Long Experts. The remaining five players include the Goal Keeper, along with a combination of Attackers, Defenders, and Midfielders.*
+
+#### 4-3-3 Formation
+For a 4-3-3 formation on a 16x8 board, excluding the Goal Keeper (01):
+
+| Number | Player Type | Starting Position |
+|--------|-------------|-------------------|
+| 02     | Defender    | C2                |
+| 03     | Defender    | F2                |
+| 04     | Defender    | D3                |
+| 05     | Defender    | G3                |
+| 06     | Midfielder  | E4                |
+| 08     | Midfielder  | B5                |
+| 10     | Midfielder  | H5                |
+| 07     | Attacker    | D7                |
+| 09     | Attacker    | F7                |
+| 11     | Attacker    | E8                |
+
+#### 5-3-2 Formation
+Alternatively, for a 5-3-2 formation:
+
+| Number | Player Type | Starting Position |
+|--------|-------------|-------------------|
+| 02     | Defender    | B2                |
+| 03     | Defender    | C3                |
+| 04     | Defender    | F3                |
+| 05     | Defender    | G2                |
+| 06     | Defender    | E2                |
+| 08     | Midfielder  | D4                |
+| 10     | Midfielder  | E5                |
+| 07     | Midfielder  | F6                |
+| 09     | Attacker    | C7                |
+| 11     | Attacker    | H7                |
+
+These formations strategically position players across rows 2 to 8, with defenders in rows 2 and 3, midfielders in rows 4 to 6, and attackers in rows 7 and 8. The placement of players is varied to avoid perfect alignment, creating a more dynamic and realistic setup for the game.
 
 ### 2.3 Goal Area
 - **Definition:** The Goal Area is a crucial zone on the game board, located at each end of the board, surrounding the goal.
-- **Location:** For a 16x8 board, the Goal Area is defined as the squares C1-F1 and C8-F8.
+- **Location:** For a 16x8 board, the Goal Area is defined as the squares C1-F1, C2-F2, of both boards.
 - **Significance:** The Goal Keeper usually occupies this area. If the Goal Keeper is outside of the Goal Area, the goal is considered empty, increasing the chance of scoring.
-- **Scoring a Goal:**
-  - **Eligibility:** Any piece on the field can attempt a shot towards the Goal Area.
-  - **Mechanism:** A goal is scored when the ball successfully crosses any of the four squares of the Goal Area. This is determined by the shooter's ability to outmatch the goalkeeper's defense, based on their respective attributes.
-  - **Goalkeeper's Defense:** The Goal Keeper attempts to defend against shots aimed at the Goal Area. The outcome of this defense is determined by comparing the relevant attributes of the shooter and the goalkeeper.
+
+### Scoring a Goal:
+
+- **Eligibility:** Any piece on the field can attempt a shot towards the Goal Area.
+- **Mechanism:** A goal is scored when the ball successfully crosses any of the squares designated as the goal. For the 16x8 board, these are squares D1-E1 fo both boards. This is determined by the shooter's ability to outmatch the goalkeeper's defense, based on their respective attributes.
+- **Goalkeeper's Defense:** The Goal Keeper attempts to defend against shots aimed at these specific goal squares. The outcome of this defense is determined by comparing the relevant attributes of the shooter and the goalkeeper.
 - **Player Awareness:** Players should be acutely aware of the Goal Area on their own board. It is important for attackers to recognize opportunities to score, and for the goalkeeper to be strategically positioned for effective defense.
 
 ### 2.4 Penalty Area
 - **Definition:** The Penalty Area is a larger zone that includes the Goal Area and additional squares directly in front of the goal.
-- **Location:** The Penalty Area extends to squares B1-G1, B2-G2 for one end and B7-G7, B8-G8 for the other end of the board.
+- **Location:** The Penalty Area extends to squares B1-G1, B4-G4 for the both boards.
 - **Importance:** Fouls committed by the defending team in the Penalty Area result in a penalty kick for the attacking team.
 - **Player Awareness:** Understanding the boundaries and strategic significance of the Penalty Area is essential for effective gameplay.
 
-### **2.5 Turn Structure**
-- **Two Movements per Turn:** In each turn, a player can make two movements. 
+### 2.5 Turn Structure
+- **Two Movements per Turn:** In each turn, a player can make two movements.
 - **Mandatory MOVE:** Out of these two movements, at least one must be a MOVE action. The other can be any action, including another MOVE.
 - **Strategic Consideration:** This rule encourages players to strategically plan their movements and actions, balancing between advancing their pieces and executing specific actions like Pass, Dribble, or Shoot.
 
-### **2.6 Starting the Game**
-*The game starts with a coin toss to decide the starting team. Players should keep in mind the strategic importance of the Goal and Penalty Areas as they begin their play.*
+### 2.6 Starting the Game
+*The game starts with a coin toss to decide the starting team.*
 
+### 2.7 Preparation of Markers
 
-### **2.4 Defining the Winning Style**
+- Follow the instructions in section 1.2 to prepare the markers for the game. The primary method involves:
+  - **Using an Erasable Pen:** 
+    - For drawing area markers directly on the board, including the penalty and goal areas.
+    - For marking the center of the board to indicate the initial position of the ball.
+  - **Using the Match Record Form:** 
+    - To keep track of the number of fouls, cards (yellow and red), and sprints during the match. 
+
+- **Alternative Using Ludo Pawns:** 
+  - If available, Ludo game pawns can be used as an alternative method for visual markers:
+    - **Yellow and Red Pawns:** To represent accumulated yellow and red cards.
+    - **Blue and Green Pawns:** For marking the penalty and goal areas on the board.
+
+### 2.8 Defining the Winning Style
 *Before beginning the game, players must agree on the winning style.* They can choose between the following options:
 - **Golden Goal:** The game ends immediately when the first goal is scored.
 - **Two Halves with Total Score:** The winner is determined by the highest total score at the end of both halves, with a penalty shootout as a tiebreaker in case of a draw.
@@ -116,7 +180,6 @@
 - **Movement Count Rule:** If no goals are scored within a set number of movements, the winner is decided by a penalty shootout.
 
 Selecting the winning style is crucial as it sets the tone and strategy for the entire game. Players should consider their team's strengths and preferred tactics when choosing the winning style.
-
 
 ## 3. Player Movement and Actions
 ### 3.1 Move Action
@@ -337,10 +400,10 @@ This updated section now includes a clear framework for determining whether a go
 Occurs when a player's MOVE targets an opponent's square, or an unsuccessful CHALLENGE is made.
 
 ### 6.2 Consequences of Fouls
-- **Team-Based Fouls Count:** The number of fouls is counted collectively for the whole team, rather than individually for each piece.
-- **Yellow Card:** The team receives a yellow card upon accumulating 3 fouls. This serves as a warning and may influence the team's play style.
-- **Red Card:** Upon reaching 4 or more fouls, the team is issued a red card. As a result, one of the team's pieces is chosen to be removed from the game. This represents a significant disadvantage and encourages teams to play cautiously to avoid fouls.
 
+- **Team-Based Fouls Count:** Fouls are counted collectively for the entire team rather than individually for each piece.
+- **Yellow Card:** The team receives a yellow card upon accumulating 3 fouls. This acts as a warning and may influence the team's strategic play.
+- **Red Card:** If a team accumulates 4 or more fouls, they are issued a red card. Consequently, the team must choose one of their pieces to be removed from the game, representing a significant strategic disadvantage.
 
 ### 6.3 Free Kick Rules
 - **Mechanism:** Shooter's Skill and Goal vs. highest Defense in defender's barrier.
