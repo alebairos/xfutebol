@@ -89,9 +89,6 @@ These components collectively enhance the strategic and interactive elements of 
 - **Goalers:** Focused on scoring and long-range shots.
 - **Long Experts:** Specialized in executing uninterceptible long passes and shots.
 
-
-
-
 ## 2. Game Setup
 
 ### 2.1 Board Configuration
@@ -317,7 +314,6 @@ Selecting the winning style is crucial as it sets the tone and strategy for the 
   - If the goalkeeper's total of Defense and Skill is equal to or greater than the total of the shooter's Goal and Skill (plus any boosts).
   - **Notation:** `(Defense + Skill) ≥ (Goal + Skill + Boosts)`
 
-
 ## Scoring Table for Regular Shoot Action
 
 | Feature             | Description                                          | Points Scheme                             |
@@ -459,8 +455,6 @@ The following table defines the feature values of each of the Player Piece types
 | **Goaler**       | 60    | 70    | 70       | 85   | 60      |
 | **Long Experts** | 75    | 80    | 70       | 85   | 50      |
 
-
-
 This manual provides a comprehensive guide to playing Futebol Chess, covering all aspects of the game from setup to gameplay mechanics. The inclusion of special player types like Long Experts adds strategic depth, and the specific attribute values for the simplified version make it accessible for beginners.
 
 ## 11. Final Thoughts and Future Developments
@@ -519,7 +513,6 @@ Just for food for thought:
 - The MOVE action is the primary means for players to reposition their pieces on the board.
 - The special player types' movement is determined by the regular player type they represent, adding strategic depth to the selection process.
 - Players must consider both the target square's status and the potential consequences of their move, including the possibility of committing a foul.
-
 
 ### 12.2 PASS Action
 
