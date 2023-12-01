@@ -232,21 +232,36 @@ Selecting the winning style is crucial as it sets the tone and strategy for the 
 ### 3.7 Shoot Action
 
 #### Mechanism:
-- The outcome of a SHOOT action is determined by comparing a combination of attributes for both the shooter and the goalkeeper.
-  - **Shooter's Attributes:** Goal + Strength + Skill.
-  - **Goalkeeper's Attributes:** Defense + Speed + Skill.
+- The outcome of a SHOOT action is determined by comparing the shooter's attributes against the goalkeeper's attributes.
+  - **Shooter's Attributes:** Goal + Skill.
+  - **Goalkeeper's Attributes:** Defense + Skill.
 
 #### Distance:
-- The Shoot action extends up to 2 times the base MOVE range for the piece.
-  - **Example:** An Attacker (A), who normally moves 2 squares forward, can shoot from up to 4 squares away from the goal.
+- The Shoot action extends up to the standard movement range of the piece.
+  - **Example:** An Attacker (A), who normally moves 2 squares forward, can shoot from up to 2 squares away from the goal.
+
+#### Scoring Boosts:
+  - **Penalty Area Boost:** Shooting from the penalty area adds +15 points to the base shoot score.
+  - **Goal Area Boost:** Shooting from the goal area adds +25 points to the base shoot score.
 
 #### Outcome:
 - **Goal Scored:**
-  - If the total of the shooter's Goal, Strength, and Skill is greater than the total of the goalkeeper's Defense, Speed, and Skill.
-  - **Notation:** `Goal + Strength + Skill > Defense + Speed + Skill`
+  - If the total of the shooter's Goal and Skill (plus any applicable boosts) is greater than the total of the goalkeeper's Defense and Skill.
+  - **Notation:** `(Goal + Skill + Boosts) > (Defense + Skill)`
 - **Saved or Deflected by Goalkeeper:**
-  - If the goalkeeper's total of Defense, Speed, and Skill is equal to or greater than the total of the shooter's Goal, Strength, and Skill.
-  - **Notation:** `Defense + Speed + Skill ≥ Goal + Strength + Skill`
+  - If the goalkeeper's total of Defense and Skill is equal to or greater than the total of the shooter's Goal and Skill (plus any boosts).
+  - **Notation:** `(Defense + Skill) ≥ (Goal + Skill + Boosts)`
+
+
+## Scoring Table for Regular Shoot Action
+
+| Feature             | Description                                          | Points Scheme                             |
+|---------------------|------------------------------------------------------|-------------------------------------------|
+| **Base Shoot**      | Using Goal + Skill of the player.                    | Base points: Player's Goal + Skill        |
+| **Penalty Area Boost**| Shooting from the penalty area.                      | +15 points to base shoot                  |
+| **Goal Area Boost** | Shooting from the goal area.                         | +25 points to base shoot                  |
+| **Scoring Condition** | Comparing total points against GK's Defense + Skill. | Goal if Shooter's total > GK's total      |
+| **Save Condition**  | If GK's total points are equal to or higher.         | Save or deflection by the GK              |
 
 ### Notes:
 - The SHOOT action is a critical part of XFutebol gameplay, representing a direct attempt to score a goal.
@@ -255,12 +270,28 @@ Selecting the winning style is crucial as it sets the tone and strategy for the 
 
 
 ### 3.8 Long Shoot Action
-- **Mechanism:** Long Experts can perform a Long Shoot action, using their Goal and Strength. This action includes both straight and curved shots.
-  - **Curved Shoot:** Involves choosing an intermediary square for the curve and the final goal square. Enhances the ability to score from angles not directly aligned with the goal.
+
+- **Mechanism:** Long Experts can perform a Long Shoot action, using their Goal, Skill, and Strength. This action includes both straight and curved shots.
+  - **Curved Shoot:** Involves choosing an intermediary square for the curve and the final goal square. Enhances the ability to score from angles not directly aligned with the goal. Adds a boost of +20 points to the base long shoot score.
 - **Distance:** The Long Shoot action extends up to 3 times the standard movement range of the piece.
+- **Scoring Boosts:**
+  - **Penalty Area Boost:** Shooting from the penalty area adds +15 points to the base or curved long shoot score.
+  - **Goal Area Boost:** Shooting from the goal area adds +25 points to the base or curved long shoot score.
 - **Outcome:**
-  - If Goal + Strength > Defense + Skill: Goal is scored.
-  - If Defense + Skill ≥ Goal + Strength: Goalkeeper saves or deflects the shot.
+  - **Scoring Condition:** If the total score (Goal + Skill + Strength + applicable boosts) is greater than the Goalkeeper's (Defense + Skill + Speed), a goal is scored.
+  - **Save Condition:** If the Goalkeeper's total points (Defense + Skill + Speed) are equal to or higher than the shooter's total score, the goalkeeper saves or deflects the shot.
+
+
+## Scoring Table for Long Shoot Action
+
+| Feature               | Description                                          | Points Scheme                                   |
+|-----------------------|------------------------------------------------------|-------------------------------------------------|
+| **Base Long Shoot**   | Using Goal + Skill + Strength of the player.         | Base points: Player's Goal + Skill + Strength   |
+| **Curved Shot Boost** | Adding a curve to the shot.                          | +20 points to base long shoot                   |
+| **Penalty Area Boost**| Shooting from the penalty area.                      | +15 points to base or curved long shoot         |
+| **Goal Area Boost**   | Shooting from the goal area.                         | +25 points to base or curved long shoot         |
+| **Scoring Condition** | Comparing total points against GK's Defense + Skill + Speed. | Goal if Shooter's total > GK's total       |
+| **Save Condition**    | If GK's total points are equal to or higher.         | Save or deflection by the GK                    |
 
 ## 4. Special Player Roles
 ### 4.1 Goaler
@@ -279,34 +310,27 @@ Goals are scored by successfully executing a Shoot action against the opponent's
 ### 5.2 Goalkeeper's Role
 Key in defending the goal. Can move out of the goal area but risks leaving the goal unguarded.
 
-#### 1. **Goal Scoring Attempt (Shot or Penalty):**
-- **Mechanism:** The outcome is determined by comparing the shooter's Goal attribute with the goalkeeper's Defense attribute.
+#### 1. Goal Scoring Attempt (Shot or Penalty):
+- **Mechanism:** The outcome is determined by comparing the shooter's and the goalkeeper's attributes, with additional boosts for shots from specific areas.
 - **Attributes:** 
-  - Shooter's Goal (Go)
-  - Goalkeeper's Defense (De)
+  - **Shooter's Attributes:** Goal + Skill (plus any applicable boosts for shots from the penalty or goal area).
+  - **Goalkeeper's Attributes:** Defense + Skill.
 
-#### 2. **Outcome Determination:**
-- **Goal Scored:** 
-  - If the shooter's Goal attribute is significantly higher than the goalkeeper's Defense.
-  - *Example:* `Go >= De + 20` (The shooter's Goal is at least 20 points higher than the goalkeeper's Defense)
+#### 2. Outcome Determination:
+- **Goal Scored:**
+  - Occurs if the shooter's combined attributes (Goal + Skill + Boosts) significantly exceed the goalkeeper's (Defense + Skill).
+  - *Example:* `(Goal + Skill + Boosts) > (Defense + Skill + 20)`
 
-- **Save with Rebound:** 
-  - If the shooter's Goal attribute is slightly higher or nearly equal to the goalkeeper's Defense.
-  - *Example:* `De <= Go < De + 20` (The shooter's Goal is greater than or equal to the goalkeeper's Defense but less than 20 points higher)
+- **Save with Rebound:**
+  - Happens if the shooter's attributes slightly exceed or are nearly equal to the goalkeeper's, resulting in the goalkeeper deflecting the ball, but not securing it.
+  - *Example:* `(Defense + Skill) ≤ (Goal + Skill + Boosts) ≤ (Defense + Skill + 20)`
 
-- **Goalkeeper Clears:** 
-  - If the goalkeeper's Defense attribute is slightly higher than the shooter's Goal.
-  - *Example:* `Go + 10 <= De < Go + 20` (The goalkeeper's Defense is up to 20 points higher than the shooter's Goal)
-
-- **Clean Save:** 
-  - If the goalkeeper's Defense attribute is significantly higher than the shooter's Goal.
-  - *Example:* `Go + 20 <= De` (The goalkeeper's Defense is at least 20 points higher than the shooter's Goal)
+- **Clean Save:**
+  - Occurs if the goalkeeper's attributes are significantly higher than the shooter's, allowing the goalkeeper to secure the ball without a rebound.
+  - *Example:* `(Goal + Skill + Boosts) < (Defense + Skill)`
 
 ### Notes:
-- These thresholds (e.g., 20 points difference) are examples and can be adjusted based on gameplay balance needs.
-- This system provides a more strategic and predictable approach to determining outcomes, as it is based on the players' attributes rather than the randomness of a dice roll.
-- The specific numbers (like 20 points difference) are adjustable to ensure the game remains balanced and enjoyable for all levels of players.
-
+This updated section now includes a clear framework for determining whether a goal attempt results in a Score, a Save with Rebound, or a Clean Save. The examples provide a straightforward way to calculate the outcome based on the shooter's and the goalkeeper's attributes, including any additional boosts for shots taken from specific areas of the field. This should enhance the game's strategic depth and the importance of positioning and player selection in goal attempts.
 
 ## 6. Fouls and Penalties
 ### 6.1 Defining a Foul
@@ -359,15 +383,18 @@ If no goals are scored within a set number of movements, 50 by default, the winn
 The following table defines the feature values of each of the Player Piece types.
 
 ### 10.1 Simplified Version: Specific Attribute Values for Player Types
-| Player Type   | Speed | Skill | Strength | Goal | Defense |
-|---------------|-------|-------|----------|------|---------|
-| Attackers     | 80    | 50    | 40       | 85   | 30      |
-| Defenders     | 40    | 40    | 70       | 30   | 80      |
-| Midfielders   | 60    | 70    | 50       | 50   | 60      |
-| Goal Keeper   | 30    | 40    | 80       | 60   | 90      |
-| Dribbler      | 90    | 80    | 30       | 40   | 40      |
-| Goaler        | 50    | 50    | 60       | 90   | 50      |
-| Long Experts  | 70    | 60    | 50       | 70   | 40      |
+
+| Player Type  | Speed | Skill | Strength | Goal | Defense |
+|--------------|-------|-------|----------|------|---------|
+| **Attackers**    | 70    | 80    | 60       | 90   | 40      |
+| **Defenders**    | 50    | 60    | 80       | 40   | 85      |
+| **Midfielders**  | 70    | 75    | 65       | 75   | 70      |
+| **Goal Keeper**  | 50    | 70    | 60       | 50   | 90      |
+| **Dribbler**     | 85    | 85    | 55       | 80   | 45      |
+| **Goaler**       | 60    | 70    | 70       | 85   | 60      |
+| **Long Experts** | 75    | 80    | 70       | 85   | 50      |
+
+
 
 This manual provides a comprehensive guide to playing Futebol Chess, covering all aspects of the game from setup to gameplay mechanics. The inclusion of special player types like Long Experts adds strategic depth, and the specific attribute values for the simplified version make it accessible for beginners.
 
