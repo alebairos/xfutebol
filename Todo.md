@@ -5,3 +5,5 @@ Things to do:
 - Design a CLI that will be the first form of playing the digital game. 
 - Run the physical board version using paper version of the forms 
 - Design the Engine. The architecture should not rely on servers for game play. Servers would fit better for Analytics. 
+- Include the checkers pieces for players. Use the pen to mark the shirt numbers.
+- LONG pass and LONG SHOOT for everypiece. But Long Experts shots are uninterceptable. Evaluate that.
