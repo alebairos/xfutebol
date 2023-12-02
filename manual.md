@@ -85,9 +85,9 @@ These components collectively enhance the strategic and interactive elements of 
 - **Defenders:** Strong, defense-focused players.
 - **Midfielders:** Versatile players adept in both offense and defense.
 - **Goal Keepers:** Specialized in defending the goal, with the option to join attacks.
-- **Dribblers:** Skilled in evading opponents and maintaining ball control.
+- **Dribblers:** Skilled in evading opponents and maintaining ball control. *A Dribbler only can be stopped by a Defender or a GK.*
 - **Goalers:** Focused on scoring and long-range shots.
-- **Long Experts:** Specialized in executing uninterceptible long passes and shots.
+- **Long Experts:** Specialized in executing uninterceptible long passes and curved balls.
 
 ## 2. Game Setup
 
@@ -95,7 +95,7 @@ These components collectively enhance the strategic and interactive elements of 
 *Align two chess boards to form a 16x8 grid, representing an extended soccer field.*
 
 ### 2.2 Team Composition
-*Each team consists of 11 players. At the beginning of the game, players select two special pieces from each of the following categories: Dribblers, Goalers, and Long Experts. The remaining five players include the Goal Keeper, along with a combination of Attackers, Defenders, and Midfielders.*
+*Each team consists of 11 players. At the beginning of the game, players select 2 special pieces from each of Dribblers and Goalers. Also, 1 and Long Expert. The remaining 6 players include the Goal Keeper, along with a combination of Attackers, Defenders, and Midfielders.*
 
 #### 4-3-3 Formation
 For a 4-3-3 formation on a 16x8 board, excluding the Goal Keeper (01):
@@ -198,10 +198,10 @@ Selecting the winning style is crucial as it sets the tone and strategy for the 
 - **Outcome:** Successful pass if the ball reaches a teammate; otherwise, potential interception by an opponent.
 
 ### 3.3 Long Pass Action
-- **Mechanism:** Long Experts can send the ball to a distant teammate. They have the unique ability to perform both straight and curved long passes.
+- **Mechanism:** *Special rule: Long Experts can make a uniterceptable pass to a distant teammate. They have the unique ability to perform both straight and curved long passes. For the other types of pieces, long passes can be challenged and intercepted.*
   - **Curved Pass:** Requires selecting an intermediary square where the curve starts and a final target square. Allows bypassing obstacles and reaching targets not in direct line of sight.
 - **Distance:** A long pass extends up to 3 times the standard movement range of the piece.
-- **Outcome:** Successful long pass if the ball reaches a teammate; risk of interception or misdirection increases with distance and complexity of the trajectory.
+- **Outcome:** Successful long pass if the ball reaches a teammate; For the other types of pieces, the risk of interception increases with distance and complexity of the trajectory, since more pieces will be on the way.
 
 ### 3.4 Challenge Action
 
@@ -243,6 +243,8 @@ Selecting the winning style is crucial as it sets the tone and strategy for the 
   - **Dribbler's Attributes:** Speed + Skill.
   - **Opponent's Attributes:** Speed + Defense.
 
+*Special rule: Only defenders and GKs can stop a dribbler.*
+
 #### Conditions for DRIBBLE:
 - A DRIBBLE can be attempted when an opposing player is in an adjacent square.
 - The action is used to evade the opponent and maintain possession of the ball.
@@ -265,6 +267,7 @@ Selecting the winning style is crucial as it sets the tone and strategy for the 
 - The DRIBBLE action is a crucial maneuver in XFutebol for players to advance the ball and evade opponents, especially in tightly contested areas.
 - This action highlights the importance of individual player attributes, particularly Speed and Skill, in successful ball control and evasion.
 - Executing effective DRIBBLE actions requires strategic consideration of both the dribbler's and the adjacent opponent's strengths and weaknesses.
+- *Since only Defenders and GKs can stop a dribbler, it's a efficient strategy to dribble to evade crowded areas of the board.*
 
 ### 3.6 Sprint Action
 
@@ -362,7 +365,7 @@ Enhanced shooting abilities, beneficial for scoring.
 Superior in evading opponents, ideal for advancing the ball.
 
 ### 4.3 Long Experts
-Specialized in executing uninterceptible long-range passes and shots. Their role is crucial for strategic positioning and creating unexpected scoring opportunities.
+Specialized in executing uninterceptible long-range passes. Their role is crucial for strategic positioning and creating unexpected scoring opportunities.
 
 ## 5. Scoring and Goalkeeping
 ### 5.1 Scoring Mechanism
@@ -714,9 +717,9 @@ _Record the composition and setup of each team._
   - Midfielders (M): `Player Names`
   - Attackers (A): `Player Names`
 - **Special Players Selection:**
-  - Dribblers (R): `Player Names`
-  - Goalers (G): `Player Names`
-  - Long Experts (L): `Player Names`
+  - Dribblers (R) 2 per team: `Player Names`
+  - Goalers (G). 2 per team: `Player Names`
+  - Long Experts (L). 1 per team: `Player Names`
 
 #### Home Team Configuration
 - **Team Members:**
@@ -725,9 +728,9 @@ _Record the composition and setup of each team._
   - Midfielders (M): `Player Names`
   - Attackers (A): `Player Names`
 - **Special Players Selection:**
-  - Dribblers (R): `Player Names`
-  - Goalers (G): `Player Names`
-  - Long Experts (L): `Player Names`
+  - Dribblers (R) 2 per team: `Player Names` and ` numbers of the shirts`
+  - Goalers (G) 2 per team: `Player Names` and ` numbers of the shirts`
+  - Long Experts (L) 1 per team: `Player Names` and ` number of the shirt`
 
 ### Board Setup
 - **Initial Positioning Scheme:**
@@ -735,12 +738,12 @@ _Record the composition and setup of each team._
   - **Visitor Team:** `_______________`
   - **Home Team:** `________________`
 - **Board Configuration:**
-  - Confirm the alignment of the two chess boards to form the 16x8 grid.
+  - Confirm the alignment of the two chess boards to form the 16x8 grid, that the pieces are numbered (from 1-11 for each team). The numbers will identify their types (GKs, defenders, attackers, etc). Confirm the Penalty areas, the goal areas, the center of the field on d8, e8, D8  or E8, depending on the coin toss. The winner of the coin toss will start by making a pass to a team mate.
 
 ### Winning Style Selection
 - **Selected Winning Style:** `_____________`
 - **Rationale for Selection:** 
-  - Explain why this winning style was chosen based on the team's strengths and strategies.
+  - Add any comment if needed eg We will make a sequence of 3 Golden Goals.
 
 ### Pre-Game Notes
 - **Team Strategies:**
@@ -814,6 +817,10 @@ _Record each team's performance metrics separately._
 ### Referee Notes
 - **Observations and Comments:**
   - _Referee's notes on the match, any unusual incidents, or important considerations:_ `____________`
+  The Referee is responsible for:
+  Explaining the rules for the  players and conducting the game setup.
+  Observing the match to avoid mistakes or bad intentions, like a player move faster than allowed, or breaking any other rule. 
+  Filling out the Match Record Form in real time.
 
 ---
 
