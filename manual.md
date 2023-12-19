@@ -814,14 +814,6 @@ _Record each team's performance metrics separately._
 - **Winning Style Outcome (if applicable):**
   - _Description of how the winning style influenced the outcome:_ `____________`
 
-### Referee Notes
-- **Observations and Comments:**
-  - _Referee's notes on the match, any unusual incidents, or important considerations:_ `____________`
-  The Referee is responsible for:
-  Explaining the rules for the  players and conducting the game setup.
-  Observing the match to avoid mistakes or bad intentions, like a player move faster than allowed, or breaking any other rule. 
-  Filling out the Match Record Form in real time.
-
 ---
 
 _This form serves as a comprehensive record of the match, capturing both quantitative data (like fouls and goals) and qualitative insights (like key events and referee notes). It's crucial for post-match analysis, strategic adjustments, and maintaining the integrity of the game's rules and spirit._
