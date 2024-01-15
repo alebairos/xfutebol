@@ -3,7 +3,6 @@
 2.1 Special areas
 3 Piece types and the Ball
 4 The rule book 
-( general rules, like that each player's turn can have two movements, one of which should be a MOVE action. This way, we avoid midfielders making uninterceptable long passes to each another ad infinitum.)
 4.1 Piece Movements 
 4.2 Piece actions
 4.3 The Goaler promotion and added skills
@@ -97,3 +96,50 @@ When a piece successfully scores a goal in "xfutebol," it is promoted to a Goale
 - **Offensive and Defensive Flexibility**: The promotion to a Goaler enhances a piece's capabilities in both offensive and defensive plays, making it a more formidable presence on the board.
 
 The Goaler promotion is a key strategic element in "xfutebol." It rewards successful offensive plays with enhanced capabilities, encouraging players to pursue goal-scoring opportunities and effectively utilize their promoted pieces in various phases of the game.
+
+# 4. The Rule Book
+
+## General Rules
+
+"xfutebol" is designed with a set of general rules that govern the flow of the game, ensuring a balance between strategic planning and dynamic action.
+
+### Turn Structure
+- **Two Movements per Turn**: Each player is allowed two movements during their turn. This structure encourages tactical decision-making and diverse gameplay strategies.
+- **Mandatory MOVE Action**: Out of the two movements, at least one must be a MOVE action. This rule is crucial to maintain the game's balance and to prevent repetitive and unchallenged plays, such as continuous uninterceptable long passes between Midfielders.
+
+### Movement and Action Limitations
+- **Diverse Actions**: Besides the mandatory MOVE action, players can choose from various actions like PASS, SHOOT, DRIBBLE, or SPRINT for their second movement. This variety allows for creative and unexpected plays.
+- **Restriction on Repetitive Actions**: To prevent the domination of a single type of play (like repeated long passes), the game limits certain actions when used consecutively or excessively by the same piece type.
+
+### Interception Mechanics
+- **Interception Limit**: To maintain a dynamic and fluid game, interceptions are limited to a maximum of five per turn. Exceeding this limit results in a special foul, giving the defensive side a chance to reset the play.
+- **Strategic Interception**: Interceptions require strategic positioning. A piece cannot intercept the ball or another piece if the movement is coming from behind it.
+
+These general rules lay the foundation for "xfutebol," combining strategic depth with fast-paced action. Players are encouraged to think creatively within this framework to outmaneuver their opponents and score goals.
+
+# 4.1 Piece Movements
+
+In "xfutebol," each piece type has unique movement abilities, reflecting their roles in a soccer game. Understanding these movement rules is crucial for strategic gameplay.
+
+## Attacker
+- **Forward Movement**: Can move up to 2 squares forward, mirroring an attacker's role in advancing towards the opponent's goal.
+- **Lateral and Backward Movement**: Has the ability to move 1 square to the sides and 1 square backward, allowing for strategic repositioning.
+
+## Defender
+- **Backward Movement**: Specializes in defensive play, capable of moving up to 2 squares backward.
+- **Forward and Lateral Movement**: Can move 1 square forward and 1 square to the sides, suitable for defensive maneuvers and supporting the midfield.
+
+## Midfielder
+- **Side Movement**: Excels in lateral control, moving up to 2 squares to the sides.
+- **Forward and Backward Movement**: Can move 1 square forward and 1 square backward, enabling them to support both offensive and defensive plays.
+
+## Goalkeeper
+- **Omni-Directional Movement**: The goalkeeper can move 1 square in any direction but is primarily focused on defending the goal area.
+
+## Sprinting
+- **Attackers and Goalers**: Attackers and promoted Goalers have the special ability to Sprint. This allows them to cover up to 4 squares in a straight line towards the opponent's goal, reflecting their role in creating fast offensive opportunities.
+
+## Additional Movement for Goalers
+- **Enhanced Mobility**: Upon scoring a goal and becoming a Goaler, a piece receives a +1 bonus to its weakest movement direction, increasing its versatility on the field.
+
+These movement rules for each piece type in "xfutebol" are designed to mimic the roles of actual soccer players, adding a layer of realism and strategic depth to the game. Players must utilize these movement abilities effectively to maneuver their pieces, control the ball, and execute their game plan.
