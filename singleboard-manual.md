@@ -1,16 +1,19 @@
-1 The Game
-2 The Board
-2.1 Special areas
-3 Piece types and the Ball
-4 The rule book 
-4.1 Piece Movements 
-4.2 Piece actions
-4.3 The Goaler promotion and added skills
-4.4 Analysis of situations
-4.5 Game Setup
-4.6 The match: keeping track of...
-4.7 The victory
-5 Tips
+# Table of Contents
+
+1. [The Game](#1-the-game)
+2. [The Board](#2-the-board)
+   2.1 [Special Areas](#21-special-areas)
+3. [Piece Types and the Ball](#3-piece-types-and-the-ball)
+4. [The Rule Book](#4-the-rule-book)
+   4.1 [Piece Movements](#41-piece-movements)
+   4.2 [Piece Actions](#42-piece-actions)
+   4.3 [The Goaler Promotion and Added Skills](#43-the-goaler-promotion-and-added-skills)
+   4.4 [Analysis of Situations](#44-analysis-of-situations)
+   4.5 [Game Setup](#45-game-setup)
+   4.6 [The Match: Keeping Track of...](#46-the-match-keeping-track-of)
+   4.7 [The Victory](#47-the-victory)
+5. [Tips](#5-tips)
+
 
 
 # 1. The Game
