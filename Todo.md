@@ -7,6 +7,6 @@ Things to do:
 - [] Design the Engine. The architecture should not rely on servers for game play. Servers would fit better for Analytics. 
 - [x] Include the checkers pieces for players. Use the pen to mark the shirt numbers.
 - [x] LONG pass and LONG SHOOT for everypiece. But Long Experts shots are uninterceptable. Evaluate that.
-- [] Increase to 4 the numbers of squares that form the goal. This way, a tentative of a shoot will have a greater chance of succeding since a GK moves itself by one square per turn.
-- [] regra para evitar que as peças fiquem dentro do gol. Só o goleiro consegue parar a bola. Dentro do gol, a bola passa direto por outras peças.
-- no game setup, gk fica na 1, D na 2, M na 3 e A na 4.
+- [x] Increase to 4 the numbers of squares that form the goal. This way, a tentative of a shoot will have a greater chance of succeding since a GK moves itself by one square per turn.
+- [x] regra para evitar que as peças fiquem dentro do gol. Só o goleiro consegue parar a bola. Dentro do gol, a bola passa direto por outras peças.
+- [x] no game setup, gk fica na 1, D na 2, M na 3 e A na 4.
