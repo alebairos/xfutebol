@@ -25,7 +25,7 @@ The primary goal in "xfutebol" is to outmaneuver your opponent and score goals. 
 
 ## Chess Meets Soccer
 - **Chess Dynamics**: Emulating the intellectual challenge of chess, each piece in "xfutebol" has specific movements and roles. Players need to strategically position and maneuver these pieces, considering both offensive and defensive tactics.
-- **Soccer Strategy**: Incorporating elements of soccer, the game involves dribbling, passing, and shooting actions. The excitement of orchestrating plays to score goals mirrors the thrill of a soccer match.
+- **Soccer Strategy**: Incorporating elements of soccer, the game involves, passing, and shooting actions. The excitement of orchestrating plays to score goals mirrors the thrill of a soccer match.
 
 ## Target Audience
 "xfutebol" is ideal for those who appreciate the tactical nuances of chess and the strategic planning of soccer. It caters to board game enthusiasts who enjoy deep strategic thinking and sports fans who are drawn to the tactical side of soccer.
@@ -122,27 +122,35 @@ These general rules lay the foundation for "xfutebol," combining strategic depth
 
 # 4.1 Piece Movements
 
-In "xfutebol," each piece type has unique movement abilities, reflecting their roles in a soccer game. Understanding these movement rules is crucial for strategic gameplay.
+The movement abilities in "xfutebol" are tailored to each piece type, reflecting their roles on a soccer field. Mastery of these movements is crucial for strategic gameplay.
 
 ## Attacker
-- **Forward Movement**: Can move up to 2 squares forward, mirroring an attacker's role in advancing towards the opponent's goal.
-- **Lateral and Backward Movement**: Has the ability to move 1 square to the sides and 1 square backward, allowing for strategic repositioning.
+- **Forward Movement**: Moves up to 2 squares forward.
+- **Lateral and Backward Movement**: Can move 1 square to the sides and 1 square backward.
 
 ## Defender
-- **Backward Movement**: Specializes in defensive play, capable of moving up to 2 squares backward.
-- **Forward and Lateral Movement**: Can move 1 square forward and 1 square to the sides, suitable for defensive maneuvers and supporting the midfield.
+- **Backward Movement**: Specializes in moving up to 2 squares backward.
+- **Forward and Lateral Movement**: Moves 1 square forward and 1 square to the sides.
 
 ## Midfielder
-- **Side Movement**: Excels in lateral control, moving up to 2 squares to the sides.
-- **Forward and Backward Movement**: Can move 1 square forward and 1 square backward, enabling them to support both offensive and defensive plays.
+- **Side Movement**: Can move 2 squares to the sides.
+- **Forward and Backward Movement**: Moves 1 square forward and 1 square backward.
+- **Pass Restriction**: Uninterceptable long passes are not effective within the penalty area (B1 to G1 and B2 to G2).
 
 ## Goalkeeper
-- **Omni-Directional Movement**: The goalkeeper can move 1 square in any direction but is primarily focused on defending the goal area.
+- **Omni-Directional Movement**: Moves 1 square in any direction, focusing on goal defense.
 
 ## Sprinting
-- **Attackers and Goalers**: Attackers and promoted Goalers have the special ability to Sprint. This allows them to cover up to 4 squares in a straight line towards the opponent's goal, reflecting their role in creating fast offensive opportunities.
+- **Attackers and Goalers**: Have the ability to Sprint, covering up to 4 squares towards the opponent's goal.
 
-## Additional Movement for Goalers
-- **Enhanced Mobility**: Upon scoring a goal and becoming a Goaler, a piece receives a +1 bonus to its weakest movement direction, increasing its versatility on the field.
+## Updated Interception Rule
+- **Interception Restriction**: A piece cannot intercept if the movement is coming from behind it.
 
-These movement rules for each piece type in "xfutebol" are designed to mimic the roles of actual soccer players, adding a layer of realism and strategic depth to the game. Players must utilize these movement abilities effectively to maneuver their pieces, control the ball, and execute their game plan.
+## Enhanced Mobility for Goalers
+- **Promotion to Goaler**: A piece is promoted to a Goaler upon scoring a goal.
+- **Additional Movement Ability**: A Goaler receives a +1 movement bonus in its weakest direction.
+   - A Midfielder promoted to a Goaler can move 2 squares forward.
+   - A Defender or an Attacker promoted to a Goaler can move 2 squares laterally.
+- This enhancement increases the versatility of the promoted piece on the field, adding depth to gameplay strategies.
+
+The distinct movement abilities and rules for each piece type in "xfutebol" are designed to create a dynamic game that mirrors the tactical nature of soccer, challenging players to thoughtfully maneuver their pieces and devise effective strategies.
