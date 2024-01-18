@@ -46,6 +46,8 @@ The primary goal in "xfutebol" is to outmaneuver your opponent and score goals. 
 ### Goal Tiles
 - Situated within the penalty areas, these tiles represent the goals. They consist of C1, D1, E1, F1 for one player, and their symmetric counterparts for the opposing player.
 - Scoring is achieved by moving the ball into these tiles under designated gameplay conditions.
+- **Exclusive to Goalkeepers**: Only Goalkeepers are allowed to be positioned on the goal tiles. Other pieces can enter a goal tile only when moving with the ball to score a goal.
+- **Scoring**: A goal is scored when a piece successfully moves the ball onto one of these tiles.
 
 ### Midfield Line
 - This line bisects the board, dividing it into two halves, setting the starting territories for each player.
@@ -75,30 +77,6 @@ In "xfutebol," each piece on the board represents a player type found in a socce
 ## The Ball
 - **Central to Gameplay**: The ball is moved across the board via various actions like passes and shots.
 - **Scoring**: A goal is scored when the ball is successfully moved into the opponent's goal tiles.
-
-## The Goaler Promotion
-- **Earning the Title**: Pieces are promoted to a Goaler after successfully scoring a goal.
-- **Enhanced Abilities**: A Goaler gains additional movement abilities, enhancing their effectiveness on the board.
-
-Understanding the strengths and limitations of each piece type, along with effective ball control, forms the basis of successful gameplay in "xfutebol."
-
-
-## The Goaler Promotion and Added Skills
-(move to the rule book)
-When a piece successfully scores a goal in "xfutebol," it is promoted to a Goaler, gaining enhanced abilities that make it more versatile and impactful on the board.
-
-### Enhanced Movement
-- **Additional Step**: A Goaler receives a +1 movement bonus to its weakest direction, enhancing its mobility and strategic value. This additional step allows the piece to cover more ground and adapt to different game situations more effectively.
-- **Examples**:
-  - A Defender, which by default moves 1 step forward, 1 to the sides, and 2 backward, can move 2 steps to the sides as a Goaler.
-  - A Midfielder, originally moving 2 steps to the sides, 1 forward, and 1 backward, gains the ability to move 2 steps forward.
-  - An Attacker, with a default movement of 2 steps forward, 1 backward, and 1 to the sides, can move 2 steps to the sides.
-
-### Enhanced Abilities
-- **Sprinting**: All Goalers, regardless of their original piece type, gain the ability to Sprint. This ability is particularly impactful for pieces like Defenders and Midfielders, who originally have more limited forward movement.
-- **Offensive and Defensive Flexibility**: The promotion to a Goaler enhances a piece's capabilities in both offensive and defensive plays, making it a more formidable presence on the board.
-
-The Goaler promotion is a key strategic element in "xfutebol." It rewards successful offensive plays with enhanced capabilities, encouraging players to pursue goal-scoring opportunities and effectively utilize their promoted pieces in various phases of the game.
 
 # 4. The Rule Book
 
@@ -146,15 +124,6 @@ The movement abilities in "xfutebol" are tailored to each piece type, reflecting
 ## Updated Interception Rule
 - **Interception Restriction**: A piece cannot intercept if the movement is coming from behind it.
 
-## Enhanced Mobility for Goalers
-- **Promotion to Goaler**: A piece is promoted to a Goaler upon scoring a goal.
-- **Additional Movement Ability**: A Goaler receives a +1 movement bonus in its weakest direction.
-   - A Midfielder promoted to a Goaler can move 2 squares forward.
-   - A Defender or an Attacker promoted to a Goaler can move 2 squares laterally.
-- This enhancement increases the versatility of the promoted piece on the field, adding depth to gameplay strategies.
-
-The distinct movement abilities and rules for each piece type in "xfutebol" are designed to create a dynamic game that mirrors the tactical nature of soccer, challenging players to thoughtfully maneuver their pieces and devise effective strategies.
-
 # 4.2 Piece Actions
 
 In "xfutebol," specific actions are associated with each piece, playing a pivotal role in the strategy and tactics of the game.
@@ -170,6 +139,10 @@ In "xfutebol," specific actions are associated with each piece, playing a pivota
 - **All Pieces**: Pieces can attempt to SHOOT towards the goal. The shot's success depends on the distance, the shooter's abilities, and the goalkeeper's position and skills.
 - **Special Areas**: Shots taken from special areas, such as the penalty zone, may be subject to additional rules and considerations.
 
+#### Passing and Shooting
+- **Ball Movement**: The ball cannot cross a tile occupied by a piece. If the ball encounters an opponent's piece, an interception occurs. If it encounters a piece from the same team, a completed pass occurs.
+- **Implications**: This rule adds strategic depth to passing and shooting, requiring players to consider the positioning of all pieces on the board.
+
 #### Sprinting
 - **Attackers and Goalers**: These pieces have the ability to SPRINT, covering up to 4 squares in a direct line towards the opponent's goal. Sprinting is vital for creating offensive opportunities or for quick defensive positioning.
 
@@ -177,7 +150,22 @@ In "xfutebol," specific actions are associated with each piece, playing a pivota
 - **Defensive Strategy**: Pieces can intercept the ball by moving to a tile with an opponent's piece holding the ball, except if the movement is from behind the intercepting piece.
 - **Goalkeepers' Role**: Goalkeepers have exclusive rights to intercept within their goal tiles, emphasizing their defensive importance.
 
-#### Enhanced Abilities for Goalers
-- **Promotion Benefits**: Being promoted to a Goaler enhances a piece's abilities, making them more versatile and influential in both offense and defense.
+# 4.3 The Goaler Promotion and Added Skills
 
-These actions are the core of "xfutebol" gameplay, requiring players to strategically consider how to best utilize their pieces' abilities. Effective use of these actions is crucial for advancing towards the opponent's goal, defending against attacks, and setting up future strategic plays.
+In "xfutebol," scoring a goal is not only a pivotal moment in the game but also triggers a significant transformation for the piece that scored. This transformation is known as the Goaler promotion, which bestows enhanced abilities on the piece.
+
+## Promotion to Goaler
+- **Achieving the Title**: A piece is promoted to a Goaler immediately after it successfully scores a goal.
+- **Permanent Change**: This promotion is permanent for the duration of the game, signifying the piece's elevated status and importance on the board.
+
+## Enhanced Movement
+- **Increased Mobility**: A Goaler receives a +1 movement bonus to its weakest direction, thereby increasing its effectiveness and versatility.
+   - **Defender as Goaler**: A Defender, usually moving 1 step forward and to the sides and 2 steps backward, can move 2 steps to the sides post-promotion.
+   - **Midfielder as Goaler**: A Midfielder, typically moving 2 steps to the sides, 1 forward, and 1 backward, gains the ability to move 2 steps forward.
+   - **Attacker as Goaler**: An Attacker, with default movements of 2 steps forward, 1 backward, and 1 to the sides, can move 2 steps to the sides.
+
+## Enhanced Abilities
+- **Sprinting Capability**: All pieces promoted to Goalers, regardless of their original type, gain the ability to Sprint. This ability is particularly impactful for pieces like Defenders and Midfielders, enhancing their offensive potential.
+- **Strategic Advantage**: The promotion to a Goaler adds a layer of strategic depth to the game. Players must consider how to utilize their enhanced pieces effectively, both in offense and defense.
+
+The Goaler promotion in "xfutebol" is a key element that adds excitement and strategic complexity to the game. It rewards goal-scoring with a tangible in-game advantage, encouraging players to pursue offensive opportunities and thoughtfully utilize their promoted pieces.
