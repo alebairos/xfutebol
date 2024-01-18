@@ -154,3 +154,30 @@ The movement abilities in "xfutebol" are tailored to each piece type, reflecting
 - This enhancement increases the versatility of the promoted piece on the field, adding depth to gameplay strategies.
 
 The distinct movement abilities and rules for each piece type in "xfutebol" are designed to create a dynamic game that mirrors the tactical nature of soccer, challenging players to thoughtfully maneuver their pieces and devise effective strategies.
+
+# 4.2 Piece Actions
+
+In "xfutebol," specific actions are associated with each piece, playing a pivotal role in the strategy and tactics of the game.
+
+#### Passing
+- **All Pieces**: Every piece can execute a PASS action. The pass range is determined by the piece's movement abilities.
+- **Midfielder's Long Pass**: 
+  - Midfielders are skilled at executing long passes, extending up to double their lateral movement range.
+  - **Restriction**: This uninterceptable pass ability is not effective within the penalty area (tiles B1 to G1 and B2 to G2). 
+  - **Interception**: Outside the penalty area, these passes cannot be intercepted by adjacent opponent pieces. However, within the penalty area, the pass can be intercepted by adjacent pieces, making the long pass more challenging and strategic near the goal.
+
+#### Shooting
+- **All Pieces**: Pieces can attempt to SHOOT towards the goal. The shot's success depends on the distance, the shooter's abilities, and the goalkeeper's position and skills.
+- **Special Areas**: Shots taken from special areas, such as the penalty zone, may be subject to additional rules and considerations.
+
+#### Sprinting
+- **Attackers and Goalers**: These pieces have the ability to SPRINT, covering up to 4 squares in a direct line towards the opponent's goal. Sprinting is vital for creating offensive opportunities or for quick defensive positioning.
+
+#### Interceptions
+- **Defensive Strategy**: Pieces can intercept the ball by moving to a tile with an opponent's piece holding the ball, except if the movement is from behind the intercepting piece.
+- **Goalkeepers' Role**: Goalkeepers have exclusive rights to intercept within their goal tiles, emphasizing their defensive importance.
+
+#### Enhanced Abilities for Goalers
+- **Promotion Benefits**: Being promoted to a Goaler enhances a piece's abilities, making them more versatile and influential in both offense and defense.
+
+These actions are the core of "xfutebol" gameplay, requiring players to strategically consider how to best utilize their pieces' abilities. Effective use of these actions is crucial for advancing towards the opponent's goal, defending against attacks, and setting up future strategic plays.
