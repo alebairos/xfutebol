@@ -235,12 +235,15 @@ In "xfutebol," analyzing alternative moves and potential interceptions is essent
 **Target Tile and Piece**: The destination tile for the action, followed by the identifier of any piece occupying that tile. In standard chess notation, this is a letter followed by a number, and if applicable, the piece identifier. For instance, B4At2 would mean tile B4 occupied by Player 2's Attacker.
 
 #### Examples Using the Adjusted Notation
-Player 1's Attacker Moves to an Empty Tile: At1A3 MOVE B4
+
+**Player 1's Attacker Moves to an Empty Tile**: At1A3 MOVE B4 .
 
 **Interpretation**: Player 1's Attacker at A3 moves to the empty tile B4.
-**Player 2's Defender Intercepts Player 1's Midfielder**: Df2C2 INTERCEPT B4Md1
+
+**Player 2's Defender Intercepts Player 1's Midfielder**: Df2C2 INTERCEPT B4Md1 .
 
 **Interpretation**: Player 2's Defender at C2 intercepts at tile B4, where Player 1's Midfielder is positioned.
-**Player 1's Midfielder Passes to Player 1's Attacker**: Md1C4 PASS E5At1
+
+**Player 1's Midfielder Passes to Player 1's Attacker**: Md1C4 PASS E5At1 .
 
 **Interpretation**: Player 1's Midfielder at C4 passes to tile E5, where Player 1's Attacker is positioned.
