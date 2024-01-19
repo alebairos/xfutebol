@@ -10,9 +10,9 @@
    4.3 [The Goaler Promotion and Added Skills](#43-the-goaler-promotion-and-added-skills)
    4.4 [Analysis of Situations](#44-analysis-of-situations)
    4.5 [Game Setup](#45-game-setup)
-   4.6 [The Match: Keeping Track of...](#46-the-match-keeping-track-of)
+   4.6 [The Match: Tracking events](#46-tracking-events)
    4.7 [The Victory](#47-the-victory)
-   4.8 [Algebraic Notation](#47-algebraic-notation)
+   4.8 [Algebraic Notation](#48-algebraic-notation)
 5. [Tips](#5-tips)
 
 # 1. The Game
