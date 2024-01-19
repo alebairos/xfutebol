@@ -229,9 +229,13 @@ In "xfutebol," analyzing alternative moves and potential interceptions is essent
 ### 4.8 Algebraic Notation
 
 **Piece Identifier**: A letter or combination of letters that uniquely identifies the piece type and player. For example, 1M for Player 1's Midfielder, 2D for Player 2's Defender.
+
 **Action**: A keyword or abbreviation that indicates the action taken by the piece. For example, PASS, MOVE, SHOOT, SPRINT, INTERCEPT.
+
 **Target Tile**: The board tile to which the action is directed, in standard chess notation (letter followed by a number). For example, B4, C3.
+
 #### Example Using the Proposed Notation
+
 **Player 1's Turn**
 First Movement: Midfielder's PASS to B4
 Notation: 1M1 PASS B4
@@ -239,6 +243,7 @@ Interpretation: Player 1's first Midfielder performs a PASS action to tile B4.
 Second Movement: Attacker's MOVE to B4
 Notation: 1A1 MOVE B4
 Interpretation: Player 1's first Attacker performs a MOVE action to tile B4, where the ball is now located.
+
 **Player 2's Turn**
 First Movement: Defender's MOVE to C3
 Notation: 2D1 MOVE C3
