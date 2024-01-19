@@ -228,35 +228,19 @@ In "xfutebol," analyzing alternative moves and potential interceptions is essent
 
 ### 4.8 Algebraic Notation
 
-**Piece Identifier**: A letter or combination of letters that uniquely identifies the piece type and player. For example, 1M for Player 1's Midfielder, 2D for Player 2's Defender.
+**Piece Identifier and Origin Tile**: The move begins with the identifier of the piece and its current position. For example, At1A3 for Player 1's Attacker at tile A3, Df2C2 for Player 2's Defender at tile C2.
 
-**Action**: A keyword or abbreviation that indicates the action taken by the piece. For example, PASS, MOVE, SHOOT, SPRINT, INTERCEPT.
+**Action**: A keyword indicating the action taken, such as MOVE, PASS, SHOOT, SPRINT, or INTERCEPT.
 
-**Target Tile**: The board tile to which the action is directed, in standard chess notation (letter followed by a number). For example, B4, C3.
+**Target Tile and Piece**: The destination tile for the action, followed by the identifier of any piece occupying that tile. In standard chess notation, this is a letter followed by a number, and if applicable, the piece identifier. For instance, B4At2 would mean tile B4 occupied by Player 2's Attacker.
 
-#### Example Using the Proposed Notation
+#### Examples Using the Adjusted Notation
+Player 1's Attacker Moves to an Empty Tile: At1A3 MOVE B4
 
-**Player 1's Turn**
-First Movement: Midfielder's PASS to B4.
+**Interpretation**: Player 1's Attacker at A3 moves to the empty tile B4.
+*Player 2's Defender Intercepts Player 1's Midfielder**: Df2C2 INTERCEPT B4Md1
 
-Notation: 1M1 PASS B4.
+**Interpretation**: Player 2's Defender at C2 intercepts at tile B4, where Player 1's Midfielder is positioned.
+Player 1's Midfielder Passes to Player 1's Attacker: Md1C4 PASS E5At1
 
-Interpretation: Player 1's first Midfielder performs a PASS action to tile B4.
-
-Second Movement: Attacker's MOVE to B4.
-
-Notation: 1A1 MOVE B4.
-
-Interpretation: Player 1's first Attacker performs a MOVE action to tile B4, where the ball is now located.
-
-**Player 2's Turn**
-First Movement: Defender's MOVE to C3.
-
-Notation: 2D1 MOVE C3.
-
-Interpretation: Player 2's first Defender performs a MOVE action to tile C3.
-Second Movement: Defender's INTERCEPT at B4.
-
-Notation: 2D1 INTERCEPT B4.
-
-Interpretation: Player 2's first Defender performs an INTERCEPTION on tile B4.
+**Interpretation**: Player 1's Midfielder at C4 passes to tile E5, where Player 1's Attacker is positioned.
