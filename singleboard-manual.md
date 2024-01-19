@@ -237,17 +237,17 @@ In "xfutebol," analyzing alternative moves and potential interceptions is essent
 #### Example Using the Proposed Notation
 
 **Player 1's Turn**
-First Movement: Midfielder's PASS to B4
-Notation: 1M1 PASS B4
+First Movement: Midfielder's PASS to B4.
+Notation: 1M1 PASS B4.
 Interpretation: Player 1's first Midfielder performs a PASS action to tile B4.
-Second Movement: Attacker's MOVE to B4
-Notation: 1A1 MOVE B4
+Second Movement: Attacker's MOVE to B4.
+Notation: 1A1 MOVE B4.
 Interpretation: Player 1's first Attacker performs a MOVE action to tile B4, where the ball is now located.
 
 **Player 2's Turn**
-First Movement: Defender's MOVE to C3
-Notation: 2D1 MOVE C3
+First Movement: Defender's MOVE to C3.
+Notation: 2D1 MOVE C3.
 Interpretation: Player 2's first Defender performs a MOVE action to tile C3.
-Second Movement: Defender's INTERCEPT at B4
-Notation: 2D1 INTERCEPT B4
+Second Movement: Defender's INTERCEPT at B4.
+Notation: 2D1 INTERCEPT B4.
 Interpretation: Player 2's first Defender performs an INTERCEPTION on tile B4.
