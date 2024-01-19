@@ -169,13 +169,13 @@ In "xfutebol," scoring a goal is not only a pivotal moment in the game but also 
 
 The Goaler promotion in "xfutebol" is a key element that adds excitement and strategic complexity to the game. It rewards goal-scoring with a tangible in-game advantage, encouraging players to pursue offensive opportunities and thoughtfully utilize their promoted pieces.
 
-### 4.4 Analysis of Situations
+# 4.4 Analysis of Situations
 
-#### Scenario 1: Effective Long Pass and Goal
+## Scenario 1: Effective Long Pass and Goal
 
 In "xfutebol," understanding and analyzing various gameplay situations are crucial for strategic decision-making. This analysis uses algebraic notation to explain a specific game state:
 
-##### Game State Analysis Using Algebraic Notation
+### Game State Analysis Using Algebraic Notation
 
 **Initial Game State**
 - **Player 1's Attacker (1A1)**: Positioned at A3.
@@ -195,13 +195,11 @@ In "xfutebol," understanding and analyzing various gameplay situations are cruci
 - This sequence of moves illustrates a well-coordinated strategy between Player 1's Midfielder and Attacker. The Midfielder's precise long pass, combined with the Attacker's swift movement to the goal area, exemplifies a successful offensive tactic in "xfutebol."
 - The application of algebraic notation provides a clear and concise breakdown of each move, enhancing the understanding of the game's progression and the strategies employed.
 
-### 4.4 Analysis of Situations
-
-#### Scenario 2: Alternative Moves and Interceptions
+## Scenario 2: Alternative Moves and Interceptions
 
 In "xfutebol," analyzing alternative moves and potential interceptions is essential for developing effective strategies. This scenario explores different passing options and their consequences:
 
-##### Game State Analysis Using Algebraic Notation
+### Game State Analysis Using Algebraic Notation
 
 **Initial Game State**
 - **Player 1's Attacker (1A1)**: Positioned at A3.
@@ -226,7 +224,7 @@ In "xfutebol," analyzing alternative moves and potential interceptions is essent
 - This scenario emphasizes the defensive strength in "xfutebol" and how it can effectively counter offensive strategies.
 - Anticipating potential interceptions and adjusting strategies accordingly is a key aspect of gameplay, underscoring the dynamic and strategic nature of "xfutebol."
 
-### 4.8 Algebraic Notation
+# 4.8 Algebraic Notation
 
 **Piece Identifier and Origin Tile**: The move begins with the identifier of the piece and its current position. For example, At1A3 for Player 1's Attacker at tile A3, Df2C2 for Player 2's Defender at tile C2.
 
@@ -234,7 +232,7 @@ In "xfutebol," analyzing alternative moves and potential interceptions is essent
 
 **Target Tile and Piece**: The destination tile for the action, followed by the identifier of any piece occupying that tile. In standard chess notation, this is a letter followed by a number, and if applicable, the piece identifier. For instance, B4At2 would mean tile B4 occupied by Player 2's Attacker.
 
-#### Examples Using the Adjusted Notation
+## Examples Using the Adjusted Notation
 
 **Player 1's Attacker Moves to an Empty Tile**: At1A3 MOVE B4 .
 
@@ -247,3 +245,34 @@ In "xfutebol," analyzing alternative moves and potential interceptions is essent
 **Player 1's Midfielder Passes to Player 1's Attacker**: Md1C4 PASS E5At1 .
 
 **Interpretation**: Player 1's Midfielder at C4 passes to tile E5, where Player 1's Attacker is positioned.
+
+## Initial Game State Configuration
+### xfutebol Match Representation
+
+A match in "xfutebol" is represented by a sequence of game state strings, each depicting the board configuration at a specific point in time. The collection of these states chronicles the progression of the match from start to finish.
+
+#### Initial Game State
+`Gk1/3Df1Df2Df3/2Md1Md2/3At1B/4/4At2/2Md3Md4/3Df4Df5Df6Gk2`
+
+This string represents the starting layout of the game board. It includes the positions of Player 1 and Player 2's Goalkeepers (Gk), Defenders (Df), Midfielders (Md), Attackers (At), and the Ball (B). The ball is positioned on tile d5, reflecting Player 1's victory in the coin flip, which determines the starting position of the ball.
+
+
+#### Goal Scoring and Resetting the Board
+When a goal is scored, the board is reset to its initial configuration, but with the ball placed in the center tile associated with the player who conceded the goal. This reset reflects the new starting state for the continuation of the match.
+
+For example, if Player 1 scores a goal, the board is reset with the ball on Player 2's center tile (e4).
+
+#### Subsequent Game States
+Each move in the match alters the board's state, resulting in a new game state string. These strings, when sequenced together, form a complete record of the match.
+
+For example:
+1. After Move 1: `...`
+2. After Move 2: `...`
+3. After a Goal Scored: `Gk1/3Df1Df2Df3/2Md1Md2/4/3B/4At2/2Md3Md4/3Df4Df5Df6Gk2`
+4. ...
+
+#### End of the Match
+The final game state string in the sequence represents the board at the conclusion of the match, capturing the end result of the gameplay.
+
+By analyzing this sequence of game states, players can review and understand the flow of the match, strategic decisions made, and key moments that influenced the outcome.
+
