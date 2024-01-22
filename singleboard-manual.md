@@ -225,36 +225,42 @@ Analyzing alternative moves and potential interceptions is essential in "xfutebo
 s
 # 4.8 Algebraic Notation
 
-**Piece Identifier and Origin Tile**: The move begins with the identifier of the piece and its current position. For example, At1A3 for Player 1's Attacker at tile A3, Df2C2 for Player 2's Defender at tile C2.
-
-**Action**: A keyword indicating the action taken, such as MOVE, PASS, SHOOT, SPRINT, or INTERCEPT.
-
-**Target Tile and Piece**: The destination tile for the action, followed by the identifier of any piece occupying that tile. In standard chess notation, this is a letter followed by a number, and if applicable, the piece identifier. For instance, B4At2 would mean tile B4 occupied by Player 2's Attacker.
-
-## Examples Using the Adjusted Notation
-
-**Player 1's Attacker Moves to an Empty Tile**: At1A3 MOVE B4 .
-
-**Interpretation**: Player 1's Attacker at A3 moves to the empty tile B4.
-
-**Player 2's Defender Intercepts Player 1's Midfielder**: Df2C2 INTERCEPT B4Md1 .
-
-**Interpretation**: Player 2's Defender at C2 intercepts at tile B4, where Player 1's Midfielder is positioned.
-
-**Player 1's Midfielder Passes to Player 1's Attacker**: Md1C4 PASS E5At1 .
-
-**Interpretation**: Player 1's Midfielder at C4 passes to tile E5, where Player 1's Attacker is positioned.
-
-## Initial Game State Configuration
 ### xfutebol Match Representation
 
 A match in "xfutebol" is represented by a sequence of game state strings, each depicting the board configuration at a specific point in time. The collection of these states chronicles the progression of the match from start to finish.
 
 #### Initial Game State
-`Gk1/3Df1Df2Df3/2Md1Md2/3At1B/4/4At2/2Md3Md4/3Df4Df5Df6Gk2`
+Board Setup: The "xfutebol" board is an 8x8 grid, similar to a chessboard. Each row is numbered from 1 to 8, starting from the bottom (White's side) to the top (Black's side).
 
-This string represents the starting layout of the game board. It includes the positions of Player 1 and Player 2's Goalkeepers (Gk), Defenders (Df), Midfielders (Md), Attackers (At), and the Ball (B). The ball is positioned on tile d5, reflecting Player 1's victory in the coin flip, which determines the starting position of the ball.
+Piece Placement:
 
+# Initial Game State
+
+The "xfutebol" board is set up in an 8x8 grid, with each player's pieces positioned at the beginning of the game. The following is the standard initial arrangement of the pieces and the ball:
+
+```plaintext
+8 | .  .  .  g  .  .  .  .  | (Row 8) Black's Goalkeeper (g), three empty tiles on either side
+7 | .  .  d  .  d  .  d  .  | (Row 7) Black's Defenders (d1, d2, d3) with one empty tile between each
+6 | .  .  .  m  .  .  m  .  | (Row 6) Black's Midfielders (m1, m2), three empty tiles on either side
+5 | .  .  .  .  B  a  .  .  | (Row 5) Ball (B) in the center, Black's Attacker (a) to its right
+4 | .  .  .  .  A  .  .  .  | (Row 4) White's Attacker (A1), four empty tiles on either side
+3 | .  .  .  M  .  .  M  .  | (Row 3) White's Midfielders (M1, M2), three empty tiles on either side
+2 | .  .  D  .  D  .  D  .  | (Row 2) White's Defenders (D1, D2, D3) with one empty tile between each
+1 | .  .  .  G  .  .  .  .  | (Row 1) White's Goalkeeper (G), three empty tiles on either side
+```
+This is represented by a FEI inspired string, as follows:
+```plaintext
+3-g-4/2-d1-1-d2-1-d3-1/3-m1-2-m2-1/4-B-a-2/4-A1-3/3-M1-2-M2-1/2-D1-1-D2-1-D3-1/3-G-4
+```
+
+Black's Pieces: Represented in lowercase, they are positioned on rows 8 to 5. The Goalkeeper (g) is alone on row 8, Defenders (d1, d2, d3) are spaced out on row 7, Midfielders (m1, m2) on row 6, and the Attacker (a) on row 5.
+White's Pieces: Represented in uppercase, they are arranged on rows 1 to 4. The Goalkeeper (G) is on row 1, Defenders (D1, D2, D3) on row 2, Midfielders (M1, M2) on row 3, and the Attacker (A1) on row 4.
+The pieces are strategically placed with spaces between them, allowing for tactical movement and play at the start of the game.
+The Ball: Located in the center of the board on row 5 (Black's half), indicating the starting position as determined by a coin flip.
+
+Initial State Description: This setup forms the initial game state of "xfutebol," from which players will begin their strategic plays. The positioning of the pieces and the ball sets the stage for the game's opening moves.
+
+By understanding this initial arrangement, players can strategize their opening moves, considering both the offensive and defensive potentials of their pieces' placement. The game progresses with each player alternating turns, moving their pieces and the ball according to the rules of "xfutebol."
 
 #### Goal Scoring and Resetting the Board
 When a goal is scored, the board is reset to its initial configuration, but with the ball placed in the center tile associated with the player who conceded the goal. This reset reflects the new starting state for the continuation of the match.
@@ -267,8 +273,11 @@ Each move in the match alters the board's state, resulting in a new game state s
 For example:
 1. After Move 1: `...`
 2. After Move 2: `...`
-3. After a Goal Scored: `Gk1/3Df1Df2Df3/2Md1Md2/4/3B/4At2/2Md3Md4/3Df4Df5Df6Gk2`
-4. ...
+3. After a Goal Scored: 
+
+```plaintext
+3-g-4/2-d1-1-d2-1-d3-1/3-m1-2-m2-1/4-1-a-2/4-A1-3/3-M1-2-M2-1/2-D1-1-D2-1-D3-1/3-G-1-B-2/turn=w;score_w=2;score_b=1`
+```
 
 #### End of the Match
 The final game state string in the sequence represents the board at the conclusion of the match, capturing the end result of the gameplay.
